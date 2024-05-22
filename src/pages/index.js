@@ -1,8 +1,8 @@
-import { Main } from "@/components/Main";
+import { Main } from "@/components/main/Main";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#3B82F6]">
+    <main className="min-h-screen min-w-screen p-4">
       <Main />
     </main>
   );
