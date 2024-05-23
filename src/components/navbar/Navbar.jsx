@@ -23,15 +23,15 @@ export default function Navbar() {
     }, [])
 
     return (
-        <nav className="fixed flex top-4 w-full justify-center px-2 z-10 font-semibold">
-            <div className={`flex w-full lg:w-2/5 border-2 border-zinc-900 bg-gray-50/70 items-center justify-between px-4 py-2 rounded-full backdrop-blur-sm transition-visible duration-500 ease-in-out ${isMenuVisible ? '' : 'invisible'}`}>
+        <nav className="fixed flex top-4 w-full justify-center px-2 z-10 font-semibold text-white">
+            <div className={`flex w-full lg:w-2/5 ring-1 ring-white bg-zinc-100/[0.03] items-center justify-between px-4 py-2 rounded-full backdrop-blur-sm transition-visible duration-500 ease-in-out ${isMenuVisible ? '' : 'invisible'}`}>
                 <Link href="/" >
-                    <Image src={Logo} className="ring-2 ring-zinc-900 px-2 p-1 rounded-xl" width={50} height={50} />
+                    <Image src={Logo} className="ring-1 ring-white px-2 p-1 rounded-xl" width={50} height={50} />
                 </Link>
                 <span className="text-2xl">
                     Expo Una
                 </span>
-                <div className="bg-white rounded-full p-2">
+                <div className="bg-gray-100/10 p-1 rounded-full text-white ring-1 ring-zinc-900">
                     <Ellipsis />
                 </div>
             </div>
