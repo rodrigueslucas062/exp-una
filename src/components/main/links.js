@@ -1,40 +1,56 @@
 import { Ellipsis } from "lucide-react";
+import Link from "next/link";
 
-export default function divs() {
+const Links = [
+  {
+    link: "/apresentacao",
+    titulo: "Apresentação",
+    icone: "Apresentação",
+  },
+  {
+    link: "/workshops",
+    titulo: "Workshops",
+    icone: "Workshops",
+  },
+  {
+    link: "/palestras",
+    titulo: "Palestras",
+    icone: "Palestras",
+  },
+];
+
+export default function Paginas() {
   return (
-    <div className="space-y-4">
-      <div
+    <>
+      <Link
         href={""}
-        className="flex justify-between p-3 rounded-lg w-full bg-white text-zinc-900 font-semibold"
-      >
+        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 bg-white text-zinc-900 font-semibold">
         <div>LOGO</div>
         <span>Apresentações</span>
         <div>
           <Ellipsis />
         </div>
-      </div>
+      </Link>
 
-      <div
+      <Link
         href={""}
-        className="flex justify-between p-3 rounded-lg w-full bg-white text-zinc-900 font-semibold"
-      >
+        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 bg-white text-zinc-900 font-semibold">
         <div>LOGO</div>
         <span>Workshops</span>
         <div>
           <Ellipsis />
         </div>
-      </div>
+      </Link>
 
-      <div
+      <Link
         href={""}
-        className="flex justify-between p-3 rounded-lg w-full bg-white text-zinc-900 font-semibold"
-      >
+        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 bg-white text-zinc-900 font-semibold">
         <div>LOGO</div>
         <span>Plestras</span>
         <div>
           <Ellipsis />
         </div>
-      </div>
-    </div>
+      </Link>
+    </>
   );
 }

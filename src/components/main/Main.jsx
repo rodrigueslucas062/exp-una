@@ -1,15 +1,13 @@
-import { Ellipsis } from "lucide-react";
-import Link from "next/link";
 import Links from "./links";
 
 export function Main() {
   return (
-    <section id="home" className="min-h-screen">
-      <div className="flex flex-col items-center pb-20">
-        <span className="text-3xl mb-4 ">Expo una</span>
-        <span>texto de teste</span>
+    <section id="Expo-Una" className="rounded-2xl min-h-screen">
+      <div className="flex flex-col items-center pt-24">
+        <span className="mb-1 text-xl font-medium text-white">Expo Una</span>
+        <span className="text-sm font-semibold mb-6 text-gray-300">texto de teste</span>
       </div>
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col items-center space-y-4">
         <Links />
       </div>
     </section>
