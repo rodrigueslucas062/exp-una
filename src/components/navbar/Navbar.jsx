@@ -16,13 +16,10 @@ const sectionNames = {
 
 export default function Navbar() {
     const [currentSection, setCurrentSection] = useState('')
-    const [copied, setCopied] = useState(false)
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
     const handleCopyLink = () => {
         navigator.clipboard.writeText(window.location.href)
-        setCopied(true)
-        setTimeout(() => setCopied(false), 2000)
         toast.success('Link copiado', {
             position: 'bottom-center',
             duration: 2000,

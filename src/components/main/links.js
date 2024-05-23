@@ -1,7 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { ChevronRight, FlaskConical, MoreHorizontal, Share2, X,
 } from "lucide-react";
-import { useState } from "react";
 import { toast } from "sonner";
 
 const Links = [
@@ -24,7 +23,6 @@ const Links = [
 
 const Paginas = ({ link, titulo, icone }) => {
   const shadowStyle = { boxShadow: "6px 6px 0px rgba(0, 0, 0, 0.20)", };
-  const [copied, setCopied] = useState(false);
 
   const handleLinkClick = (e) => {
     if (!e.defaultPrevented) {
@@ -35,8 +33,6 @@ const Paginas = ({ link, titulo, icone }) => {
   const handleCopyLink = (e) => {
     e.stopPropagation();
     navigator.clipboard.writeText(link);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
     toast.success("Link copiado", {
       position: "bottom-center",
       duration: 2000,
