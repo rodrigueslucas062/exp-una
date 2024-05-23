@@ -24,7 +24,7 @@ export default function Paginas() {
     <>
       <Link
         href={""}
-        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 bg-white text-zinc-900 font-semibold">
+        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 backdrop-blur-md bg-white/5 text-white font-semibold">
         <div>LOGO</div>
         <span>Apresentações</span>
         <div>
@@ -34,7 +34,7 @@ export default function Paginas() {
 
       <Link
         href={""}
-        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 bg-white text-zinc-900 font-semibold">
+        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 backdrop-blur-sm bg-white/75 text-zinc-900 font-semibold">
         <div>LOGO</div>
         <span>Workshops</span>
         <div>
@@ -44,7 +44,7 @@ export default function Paginas() {
 
       <Link
         href={""}
-        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 bg-white text-zinc-900 font-semibold">
+        className="flex justify-between p-3 rounded-lg w-full md:w-1/3 backdrop-blur-sm bg-white/75 text-zinc-900 font-semibold">
         <div>LOGO</div>
         <span>Plestras</span>
         <div>

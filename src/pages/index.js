@@ -1,4 +1,5 @@
 import { Main } from "@/components/main/Main";
+import { BackgroundBeams } from "@/utils/ui/background-beams";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,9 +14,10 @@ export default function Home() {
         <meta property="og:description" content="Expo Una" />
       </Head>
 
-      <main className="min-h-screen min-w-screen p-4">
+      <main className="p-4 z-10">
         <Main />
       </main>
+      <BackgroundBeams />
     </>
   );
 }
