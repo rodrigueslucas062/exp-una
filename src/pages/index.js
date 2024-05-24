@@ -14,7 +14,7 @@ export default function Home() {
         <meta property="og:description" content="Expo Una" />
       </Head>
 
-      <main className="p-4 z-10">
+      <main className="p-4">
         <Main />
       </main>
       <BackgroundBeams />
