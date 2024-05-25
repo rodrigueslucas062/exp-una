@@ -5,41 +5,14 @@ import Apresentacao from "./workshoplist";
 
 export default function Workshop() {
   return (
-    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray- py-6 sm:py-12">
+    <section id="workshops" class="flex min-h-screen flex-col overflow-hidden py-6 sm:py-12 bg-zinc-900">
       <div class="mx-auto max-w-screen-xl px-4 w-full">
-        <h2 class="mb-4 font-bold text-xl text-white">Aulas disponiveis:</h2>
+        <h2 class="mb-4 font-bold text-xl text-white pt-20 pb-4">Aulas disponiveis:</h2>
+
         <div class="grid w-full sm:grid-cols-2 xl:grid-cols-4 gap-6">
           <Dialog.Root>
-            <div class="relative bg-zinc-100[0.03] backdrop-blur-sm flex flex-col shadow-md rounded-xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 max-w-sm">
-              <a
-                href=""
-                class="text-zinc-900 absolute z-30 top-2 right-0 mt-2 mr-3"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
-                />
-              </a>
-              <a href="" class="z-20 absolute h-full w-full top-0 left-0 ">
-                &nbsp;
-              </a>
-              <div class="h-auto overflow-hidden">
-                <div class="h-44 overflow-hidden relative"></div>
-              </div>
-              <div class="bg-white py-4 px-3">
 
-               <Apresentacao/>
-                <div class="flex justify-between items-center">
-                  <p class="text-xs text-gray-400">
-                    Lorem, ipsum dolor sit amet
-                  </p>
-                  <Dialog.Trigger class="relative z-40 flex items-center gap-2">
-                    <span>Saiba mais</span>
-                  </Dialog.Trigger>
-                </div>
-              </div>
-            </div>
+            <Apresentacao />
 
             <Dialog.Portal>
               <Dialog.DialogOverlay className="inset-0 fixed bg-black/20">
@@ -74,6 +47,6 @@ export default function Workshop() {
           </Dialog.Root>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
