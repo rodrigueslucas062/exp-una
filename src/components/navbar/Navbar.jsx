@@ -11,6 +11,7 @@ const sectionNames = {
     expoUna: "Expo Una",
     apresentacoesLista: "Apresentações",
     engenhariaSoftware: "Eng. de Software",
+    workshops: "Workshops",
 };
 
 export default function Navbar() {
