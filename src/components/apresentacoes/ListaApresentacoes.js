@@ -1,3 +1,4 @@
+import { useInViewHook } from "@/hooks/use-in-view.hook";
 import { ArrowRight, GraduationCap } from "lucide-react";
 
 const ApresentacoesInfo = [
@@ -54,8 +55,9 @@ function ApresentacoesEngSoftware({
   unidadeCurricular,
   integrantes = [],
 }) {
+  const {ref, inView} = useInViewHook(0.1);
   return (
-    <article className="p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md">
+    <article ref={ref} className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
       <div className="flex justify-between items-center mb-5 text-gray-500">
         <span className="gap-2 text-xs font-medium inline-flex items-center px-2 py-1 rounded bg-purple-500/20 text-white">
           <GraduationCap size={14} />

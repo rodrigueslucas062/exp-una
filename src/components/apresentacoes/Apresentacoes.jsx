@@ -3,8 +3,11 @@ import Link from "next/link";
 import Logo from '../../../public/images/Logo.jpeg'
 import Image from "next/image";
 import ApresentacaoDados from "./ListaApresentacoes";
+import { useInViewHook } from "@/hooks/use-in-view.hook";
 
 export function ApresentacoesLista() {
+    const {ref, inView} = useInViewHook(0.5);
+      
     return (
         <section id="apresentacoesLista" className="flex max-md:flex-col h-full min-h-screen">
             <div className="text-white md:hidden bg-purple-500/[0.3] pt-12 rounded-b-3xl text-center">
@@ -36,7 +39,7 @@ export function ApresentacoesLista() {
             </div>
 
             <section id="engenhariaSoftware" className="md:w-1/2 p-6 lg:px-16 text-white space-y-4">
-                <h1 className="mb-10 md:mt-16 text-3xl font-semibold">Engenharia de Software</h1>
+                <h1 ref={ref} className={`mb-10 mt-96 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-up"}`}>Engenharia de Software</h1>
                 <ApresentacaoDados />
             </section>
         </section>
