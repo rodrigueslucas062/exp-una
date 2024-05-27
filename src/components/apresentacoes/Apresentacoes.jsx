@@ -39,7 +39,7 @@ export function ApresentacoesLista() {
             </div>
 
             <section id="engenhariaSoftware" className="md:w-1/2 p-6 lg:px-16 text-white space-y-4">
-                <h1 ref={ref} className={`mb-10 mt-96 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-up"}`}>Engenharia de Software</h1>
+                <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-up"}`}>Engenharia de Software</h1>
                 <ApresentacaoDados />
             </section>
         </section>
