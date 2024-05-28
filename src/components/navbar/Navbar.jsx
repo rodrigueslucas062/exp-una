@@ -12,6 +12,7 @@ const sectionNames = {
     apresentacoesLista: "Apresentações",
     engenhariaSoftware: "Eng. de Software",
     workshops: "Workshops",
+    palestra: "Palestras",
 };
 
 export default function Navbar() {
@@ -74,8 +75,7 @@ export default function Navbar() {
                                     initial={{ y: "100%", opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     exit={{ y: "100%", opacity: 0 }}
-                                    transition={{ duration: 0.5 }}
-                                >
+                                    transition={{ duration: 0.5 }} >
                                     <Dialog.Close className="bg-zinc-900/60 p-1 rounded-full text-white ring-1 ring-zinc-900 absolute top-2 right-2">
                                         <X className="size-5" />
                                     </Dialog.Close>
