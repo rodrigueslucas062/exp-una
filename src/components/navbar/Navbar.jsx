@@ -11,6 +11,8 @@ const sectionNames = {
     expoUna: "Expo Una",
     apresentacoesLista: "Apresentações",
     engenhariaSoftware: "Eng. de Software",
+    analiseDados: "Analise de Dados e BigData",
+    ComputacaoGrafica: "Computação Gráfica e RV",
     workshops: "Workshops",
     palestra: "Palestras",
 };
