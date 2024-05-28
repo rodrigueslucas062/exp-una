@@ -13,6 +13,8 @@ const lista = [
     descricao:
       "Transforme-se em um mestre de planilhas com o Excel. Aprenda a organizar, analisar e visualizar dados de forma eficiente, otimizando seu tempo e trabalho.",
     sala: "201",
+    horario: "08:50-09:50",
+    dia: "17/06",
     sympla: "",
   },
   {
@@ -21,6 +23,8 @@ const lista = [
     descricao:
       "Use HTML e CSS para estruturar seus sites. Crie designs incríveis e personalizados com CSS, dando vida às suas páginas.",
     sala: "301",
+    horario: "08:50-09:50",
+    dia: "19/06",
     sympla: "",
   },
   {
@@ -29,6 +33,8 @@ const lista = [
     descricao:
       "Domine a linguagem SQL para gerenciar e consultar bancos de dados. Aprenda a armazenar, organizar e recuperar informações com maestria.",
     sala: "401",
+    horario: "10:30-11:30",
+    dia: "18/06",
     sympla: "",
   },
   {
@@ -37,6 +43,8 @@ const lista = [
     descricao:
       "Dê vida à sua imaginação com o Blender, um software de modelagem 3D gratuito e poderoso. Aprenda os fundamentos da criação de modelos 3D, animações e efeitos visuais.",
     sala: "501",
+    horario: "10:30-11:30",
+    dia: "17/06",
     sympla: "",
   },
   {
@@ -45,6 +53,8 @@ const lista = [
     descricao:
       "Torne-se um especialista em Git, a ferramenta essencial para controle de versão de software. Aprenda a trabalhar em equipe com eficiência, rastreando alterações e versionamento do seu código.",
     sala: "601",
+    horario: "10:50-11:40",
+    dia: "19/06",
     sympla: "",
   },
 ];
@@ -59,6 +69,8 @@ export default function Apresentacao() {
             titulo={info.titulo}
             descricao={info.descricao}
             sala={info.sala}
+            dia={info.dia}
+            horario={info.horario}
             sympla={info.sympla}
           />
         </div>
@@ -67,13 +79,15 @@ export default function Apresentacao() {
   );
 }
 
-function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, sympla }) {
+function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, sympla }) {
   const shadowStyle = { boxShadow: "10px 10px 0px rgba(0, 0, 0, 0.40)" };
 
   return (
     <Dialog.Root>
-      <div className="flex flex-col lg:flex-row rounded-xl bg-zinc-800 overflow-hidden"
-        style={shadowStyle} >
+      <div
+        className="flex flex-col lg:flex-row rounded-xl bg-zinc-800 overflow-hidden"
+        style={shadowStyle}
+      >
         <div className="hidden lg:block lg:w-1/3 h-64 relative bg-purple-500/[0.3] rounded-full">
           <Image
             alt="Album cover"
@@ -88,10 +102,24 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, sympla }) {
           <div className="flex justify-between items-start">
             <div className="flex flex-col gap-0 space-y-4">
               <h3 className="font-semibold text-white text-xl">{titulo}</h3>
-              <p className="text-small text-foreground/80 text-white">
-                Sala: <span className="text-purple-500 font-bold">{sala}</span>
+              <div className="flex gap-2">
+                <p className="text-small text-foreground/80 text-white">
+                  Sala:{" "}
+                  <span className="text-purple-500 font-bold">{sala}</span>
+                </p>
+                <p className="text-small text-foreground/80 text-white">
+                  Dia:{" "}
+                  <span className="text-purple-500 font-bold">{dia}</span>
+                </p>
+                <p className="text-small text-foreground/80 text-white">
+                  Horário:{" "}
+                  <span className="text-purple-500 font-bold">{horario}</span>
+                </p>
+              </div>
+
+              <p className="text-large font-medium mt-2 text-white">
+                {descricao}
               </p>
-              <p className="text-large font-medium mt-2 text-white">{descricao}</p>
             </div>
           </div>
 
@@ -100,7 +128,10 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, sympla }) {
               <Dialog.Trigger className="text-small text-white">
                 <span>Saiba mais</span>
               </Dialog.Trigger>
-              <Link href={sympla} className="flex gap-2 items-center text-small text-white" >
+              <Link
+                href={sympla}
+                className="flex gap-2 items-center text-small text-white"
+              >
                 <span>Sympla</span>
                 <ExternalLink size={16} />
               </Link>

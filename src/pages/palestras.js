@@ -22,7 +22,7 @@ export default function Palestras() {
         <div className="flex flex-row gap-2 items-center justify-center">
           <h2 className="text-2xl">Palestrante:</h2>
           <p className="font-bold text-2xl bg-purple-500/[0.3] px-1.5 py-1 rounded-lg">
-            Julian
+            Julian Faria
           </p>{" "}
         </div>
         <p className="text-lg">
