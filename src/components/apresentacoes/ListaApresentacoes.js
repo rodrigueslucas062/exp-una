@@ -8,15 +8,17 @@ const ApresentacoesInfo = [
     descricao:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta esse reprehenderit quae magni, perferendis, nobis voluptas eos saepe a,et voluptatibus quo non illo labore ducimus quis? Ducimus, non!",
     integrantes: [
-      "Elias Silva",
-      "Matheus Lacerda",
-      "Carolina Silva",
-      "Nicholas James",
-      "Guilherme da Costa",
-      "Rafael Coura",
-      "Bruna Luiza",
-      "Victor Almeida",
+      "Elias Silva,",
+      "Matheus Lacerda,",
+      "Carolina Silva,",
+      "Nicholas James,",
+      "Guilherme da Costa,",
+      "Rafael Coura,",
+      "Bruna Luiza,",
+      "Victor Almeida,",
     ],
+    hora: "08:50 às 09:50",
+    dia: "Sexta-feira, 21/06"
   },
   {
     titulo: "Pipo Filmes",
@@ -24,11 +26,41 @@ const ApresentacoesInfo = [
     descricao:
       "Ajudar na busca por filmes entre os serviços de streaming, e realizar recomendações de filmes de acordo com os gostos e assinaturas do usuário.",
     integrantes: [
-      "João Vitor De Sá",
-      "Carolina Vitória",
-      "Antônio Eustáquio",
-      "Luiz Henrique",
+      "João Vitor De Sá,",
+      "Carolina Vitória,",
+      "Antônio Eustáquio,",
+      "Luiz Henrique,",
     ],
+    hora: "08:50 às 09:50",
+    dia: "Sexta-feira, 21/06"
+  },
+  {
+    titulo: "Easy Gest",
+    unidadeCurricular: "Eng. Software",
+    descricao:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta esse reprehenderit quae magni, perferendis, nobis voluptas eos saepe a,et voluptatibus quo non illo labore ducimus quis? Ducimus, non!",
+    integrantes: [
+      "aluno,",
+      "aluno,",
+      "aluno,",
+      "aluno,",
+    ],
+    hora: "08:50 às 09:50",
+    dia: "Sexta-feira, 21/06"
+  },
+  {
+    titulo: "Geek Owl",
+    unidadeCurricular: "Eng. Software",
+    descricao:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta esse reprehenderit quae magni, perferendis, nobis voluptas eos saepe a,et voluptatibus quo non illo labore ducimus quis? Ducimus, non!",
+    integrantes: [
+      "aluno,",
+      "aluno,",
+      "aluno,",
+      "aluno,",
+    ],
+    hora: "08:50 às 09:50",
+    dia: "Sexta-feira, 21/06"
   },
 ];
 
@@ -42,6 +74,8 @@ export default function ApresentacaoDados() {
             descricao={info.descricao}
             unidadeCurricular={info.unidadeCurricular}
             integrantes={info.integrantes}
+            hora={info.hora}
+            dia={info.dia}
           />
         </div>
       ))}
@@ -54,6 +88,8 @@ function ApresentacoesEngSoftware({
   descricao,
   unidadeCurricular,
   integrantes = [],
+  hora,
+  dia
 }) {
   const {ref, inView} = useInViewHook(0.1);
   return (
@@ -64,9 +100,10 @@ function ApresentacoesEngSoftware({
           {unidadeCurricular}
         </span>
       </div>
-      <h2 className="mb-2 text-2xl font-bold tracking-tight text-white">
-        {titulo}
-      </h2>
+      <div className="space-y-1 mb-2">
+      <h2 className="text-2xl font-bold tracking-tight text-white">{titulo}</h2>
+      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora}</span></p>
+      </div>
       <p className="mb-5 font-light text-gray-400">{descricao}</p>
       <div className="flex justify-between items-center">
         <div className="flex flex-col space-y-4">
