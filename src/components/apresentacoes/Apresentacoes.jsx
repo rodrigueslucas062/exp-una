@@ -3,7 +3,7 @@ import Link from "next/link";
 import Logo from '../../../public/images/Logo.jpeg'
 import Image from "next/image";
 import ApresentacaoDados from "./ListaApresentacoes";
-import { useInViewHook } from "@/hooks/use-in-view.hook";
+import { useInViewHook } from "@/utils/hooks/use-in-view.hook";
 
 export function ApresentacoesLista() {
     const {ref, inView} = useInViewHook(0.5);

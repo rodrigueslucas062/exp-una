@@ -1,4 +1,4 @@
-import { useInViewHook } from "@/hooks/use-in-view.hook";
+import { useInViewHook } from "@/utils/hooks/use-in-view.hook";
 import { ArrowRight, GraduationCap } from "lucide-react";
 
 const ApresentacoesInfo = [

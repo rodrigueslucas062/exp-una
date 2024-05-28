@@ -1,6 +1,5 @@
-import Speaker from '../../public/images/julio.png'
+import Speaker from '../../public/images/julian.png'
 import Image from "next/image";
-import { Highlight } from "@/components/text-highlight/text-highlight.component";
 
 export default function Palestras() {
     return (
@@ -15,8 +14,7 @@ export default function Palestras() {
             <div className="flex items-center flex-col gap-4 text-center animate-fade-right mb-6">
                 <div className='flex flex-row gap-2 items-center justify-center'>
                     <h2 className="text-2xl">Palestrante:</h2>
-                    <Highlight><p className='font-bold text-2xl'>Julio</p></Highlight>
-                </div>
+                    <p className="font-bold text-2xl bg-purple-500/[0.3] px-1.5 py-1 rounded-lg">Julian</p>                </div>
                 <p className='text-lg'>Tema: <strong className="font-bold text-purple-400/[.75]">Inteligência Artificial</strong></p>
             </div>
 
