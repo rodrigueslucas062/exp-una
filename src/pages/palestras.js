@@ -51,11 +51,11 @@ export default function Palestras() {
         <p className="text-lg">
           Data:{" "}
           <span className="font-semibold text-purple-400">
-            10 de Junho, 2024
+            Quarta-feira, 19/06
           </span>
         </p>
         <p className="text-lg">
-          Horário: <span className="font-semibold text-purple-400">14:00</span>
+          Horário: <span className="font-semibold text-purple-400">10h às 11h</span>
         </p>
         <p className="text-lg">
           Local:{" "}
