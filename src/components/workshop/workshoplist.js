@@ -102,17 +102,14 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, s
           <div className="flex justify-between items-start">
             <div className="flex flex-col gap-0 space-y-4">
               <h3 className="font-semibold text-white text-xl">{titulo}</h3>
-              <div className="flex gap-2">
+              <div className="flex-col gap-2">
                 <p className="text-small text-foreground/80 text-white">
                   Sala:{" "}
                   <span className="text-purple-500 font-bold">{sala}</span>
                 </p>
                 <p className="text-small text-foreground/80 text-white">
-                  Dia:{" "}
-                  <span className="text-purple-500 font-bold">{dia}</span>
-                </p>
-                <p className="text-small text-foreground/80 text-white">
-                  Horário:{" "}
+                  Dia: <span className="text-purple-500 font-bold">{dia} </span>
+                  às{" "}
                   <span className="text-purple-500 font-bold">{horario}</span>
                 </p>
               </div>
