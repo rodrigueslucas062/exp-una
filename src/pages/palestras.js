@@ -55,12 +55,12 @@ export default function Palestras() {
           </span>
         </p>
         <p className="text-lg">
-          Horário: <span className="font-semibold text-purple-400">10h às 11h</span>
+          Horário: <span className="font-semibold text-purple-400">8:50h às 10h</span>
         </p>
         <p className="text-lg">
           Local:{" "}
           <span className="font-semibold text-purple-400">
-            Auditório da Universidade
+            Sala 503
           </span>
         </p>
       </div>
