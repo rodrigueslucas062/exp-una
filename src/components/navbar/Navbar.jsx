@@ -1,11 +1,12 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
-import { ChevronRight, Ellipsis, Share2, X } from "lucide-react";
+import { Home, ChevronRight, Ellipsis, Share2, X } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Logo from '../../../public/images/Logo.jpeg';
 import Link from "next/link";
 import { toast } from "sonner";
+import { usePathname } from "next/navigation";
 
 const sectionNames = {
     expoUna: "Expo Una",
@@ -20,6 +21,7 @@ const sectionNames = {
 export default function Navbar() {
     const [currentSection, setCurrentSection] = useState('')
     const [isMenuVisible, setIsMenuVisible] = useState(false);
+    const pathname = usePathname();
 
     const handleCopyLink = () => {
         navigator.clipboard.writeText(window.location.href)
@@ -86,8 +88,18 @@ export default function Navbar() {
                                             <div className='flex justify-center mb-8'>
                                                 <span className="font-semibold text-lg">{currentSection}</span>
                                             </div>
-                                            <div className="flex flex-col bg-gray-100/10 space-y-4 lg:space-y-1.5 font-semibold">
-                                                <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+                                            <div className="flex flex-col gap-5 space-y-4 lg:space-y-1.5 font-semibold">
+                                                {
+                                                    pathname !== "/" &&
+                                                    <Link className="flex bg-gray-100/10 justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+                                                        href={"/"}
+                                                    >
+                                                        <Home />
+                                                        <span>Retornar ao menu</span>
+                                                        <ChevronRight />
+                                                    </Link>
+                                                }
+                                                <button className="flex bg-gray-100/10 justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
                                                     onClick={handleCopyLink}>
                                                     <Share2 />
                                                     <span>Compartilhar link</span>
