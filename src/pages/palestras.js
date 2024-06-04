@@ -28,7 +28,7 @@ export default function Palestras() {
         <p className="text-lg">
           Tema:{" "}
           <strong className="font-bold text-purple-400/[.75]">
-            Inteligência Artificial
+            Direito Digital
           </strong>
         </p>
       </div>
