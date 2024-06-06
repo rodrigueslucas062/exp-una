@@ -8,23 +8,23 @@ import { ExternalLink } from "lucide-react";
 
 const lista = [
   {
-    img: Images.Excel,
-    titulo: "Excel",
-    descricao:
-      "Transforme-se em um mestre de planilhas com o Excel. Aprenda a organizar, analisar e visualizar dados de forma eficiente, otimizando seu tempo e trabalho.",
-    sala: "201",
-    horario: "08:50-09:50",
-    dia: "17/06",
-    sympla: "",
-  },
-  {
     img: Images.Html,
     titulo: "HTML e CSS",
     descricao:
       "Use HTML e CSS para estruturar seus sites. Crie designs incríveis e personalizados com CSS, dando vida às suas páginas.",
     sala: "301",
     horario: "08:50-09:50",
-    dia: "19/06",
+    dia: "Segunda-feira, 17/06",
+    sympla: "",
+  },
+  {
+    img: Images.Git,
+    titulo: "Git",
+    descricao:
+      "Torne-se um especialista em Git, a ferramenta essencial para controle de versão de software. Aprenda a trabalhar em equipe com eficiência, rastreando alterações e versionamento do seu código.",
+    sala: "601",
+    horario: "10:30-11:30",
+    dia: "Segunda-feira, 17/06",
     sympla: "",
   },
   {
@@ -34,7 +34,17 @@ const lista = [
       "Domine a linguagem SQL para gerenciar e consultar bancos de dados. Aprenda a armazenar, organizar e recuperar informações com maestria.",
     sala: "401",
     horario: "10:30-11:30",
-    dia: "18/06",
+    dia: "terça-feira, 18/06",
+    sympla: "",
+  },
+  {
+    img: Images.Excel,
+    titulo: "Excel",
+    descricao:
+      "Transforme-se em um mestre de planilhas com o Excel. Aprenda a organizar, analisar e visualizar dados de forma eficiente, otimizando seu tempo e trabalho.",
+    sala: "201",
+    horario: "10:30-11:30",
+    dia: "Quarta-feira 19/06",
     sympla: "",
   },
   {
@@ -44,17 +54,7 @@ const lista = [
       "Dê vida à sua imaginação com o Blender, um software de modelagem 3D gratuito e poderoso. Aprenda os fundamentos da criação de modelos 3D, animações e efeitos visuais.",
     sala: "501",
     horario: "10:30-11:30",
-    dia: "17/06",
-    sympla: "",
-  },
-  {
-    img: Images.Git,
-    titulo: "Git",
-    descricao:
-      "Torne-se um especialista em Git, a ferramenta essencial para controle de versão de software. Aprenda a trabalhar em equipe com eficiência, rastreando alterações e versionamento do seu código.",
-    sala: "601",
-    horario: "10:50-11:40",
-    dia: "19/06",
+    dia: "Quinta-feira 21/06",
     sympla: "",
   },
 ];
@@ -84,10 +84,7 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, s
 
   return (
     <Dialog.Root>
-      <div
-        className="flex flex-col lg:flex-row rounded-xl bg-zinc-800 overflow-hidden"
-        style={shadowStyle}
-      >
+      <div className="flex flex-col lg:flex-row rounded-xl bg-zinc-800 overflow-hidden" style={shadowStyle} >
         <div className="hidden lg:block lg:w-1/3 h-64 relative bg-purple-500/[0.3] rounded-full">
           <Image
             alt="Album cover"

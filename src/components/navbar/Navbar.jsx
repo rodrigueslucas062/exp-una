@@ -9,11 +9,12 @@ import { toast } from "sonner";
 import { usePathname } from "next/navigation";
 
 const sectionNames = {
-    expoUna: "Expo Una",
+    expoUna: "ExpoUna",
     apresentacoesLista: "Apresentações",
     engenhariaSoftware: "Eng. de Software",
     analiseDados: "Analise de Dados e BigData",
     ComputacaoGrafica: "Computação Gráfica e RV",
+    Governanca: "Gov. e Serviços de Ti",
     workshops: "Workshops",
     palestra: "Palestras",
 };
