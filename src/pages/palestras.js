@@ -8,14 +8,14 @@ export default function Palestras() {
   return (
     <section id="palestra" className="flex max-md:flex-col h-full min-h-screen">
       <div className="text-white md:hidden bg-purple-500/[0.3] pt-12 rounded-b-3xl text-center">
-        <div className="flex gap-4 items-center justify-center py-16">
+        <div className="flex gap-4 items-center justify-center py-8">
           <Image src={Logo} width={90} height={120} className='rounded-xl' />
           <h2 className="text-center text-4xl font-bold leading-9 text-gray-50">
             Apresentações
           </h2>
         </div>
       </div>
-      <Link href={"/"} className="absolute left-8 top-8 z-50 bg-gray-100/10 p-2 rounded-full text-white ring-1 ring-zinc-900">
+      <Link href={"/"} className="md:invisible absolute left-8 top-8 z-50 bg-gray-100/10 p-2 rounded-full text-white ring-1 ring-zinc-900">
         <ArrowLeft size={18} />
       </Link>
       <div className="hidden md:flex fixed h-full w-1/2 text-white bg-purple-500/[0.3] rounded-r-3xl">
@@ -26,11 +26,11 @@ export default function Palestras() {
           </h2>
         </div>
       </div>
-      <div className="w-full md:w-1/2 md:ml-[50%] pt-6 px-6 lg:px-16 text-white space-y-4 overflow-y-auto">
+      <div className="w-full md:w-1/2 md:ml-[50%] px-6 lg:px-16 text-white space-y-4 overflow-y-auto">
         <div
-          className="flex items-center justify-center w-full min-h-screen text-white flex-col p-8 rounded-md"
+          className="flex items-center justify-center w-full py-16 md:py-24 text-white flex-col p-8 rounded-md"
         >
-          <div className="text-center mb-6">
+          <div className="text-center mb-6 md:mb-2">
             <h1 className="text-4xl font-bold animate-fade-down">
               Palestra Especial
             </h1>

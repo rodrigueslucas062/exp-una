@@ -26,9 +26,9 @@ export default function Workshop() {
         </div>
       </div>
 
-      <div className="hidden md:flex fixed top-0 z-20 left-0 h-full w-1/2 text-white bg-purple-500/[0.3] rounded-r-3xl">
+      <div className="hidden md:flex fixed top-0 left-0 h-full w-1/2 text-white bg-purple-500/[0.3] rounded-r-3xl">
         <div className="flex gap-4 items-center justify-center w-full">
-          <button className="absolute left-4 top-4 z-20 bg-gray-100/10 p-2 rounded-full text-white ring-1 ring-zinc-900">
+          <button className="md:invisible absolute left-4 top-4 z-20 bg-gray-100/10 p-2 rounded-full text-white ring-1 ring-zinc-900">
             <Link href='/'>
               <ArrowLeft size={18} />
             </Link>
