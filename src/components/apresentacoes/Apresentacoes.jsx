@@ -2,7 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Logo from '../../../public/images/Logo.jpeg'
 import Image from "next/image";
-import ApresentacaoDados from "./ListaApresentacoes";
+import { ApresentacaoCompGrafica, ApresentacaoDadosBigData, ApresentacaoDadosEngSoft, ApresentacaoGovTi } from "./ListaApresentacoes";
 import { useInViewHook } from "@/utils/hooks/use-in-view.hook";
 
 export function ApresentacoesLista() {
@@ -26,7 +26,7 @@ export function ApresentacoesLista() {
 
             <div className="hidden md:flex fixed h-full w-1/2 text-white bg-purple-500/[0.3] rounded-r-3xl">
                 <div className="flex gap-4 items-center justify-center w-full">
-                    <button className="absolute left-8 top-8 z-50 bg-gray-100/10 p-2 rounded-full text-white ring-1 ring-zinc-900">
+                    <button className="md:invisible absolute left-4 top-4 z-20 bg-gray-100/10 p-2 rounded-full text-white ring-1 ring-zinc-900">
                         <Link href='/'>
                             <ArrowLeft size={18} />
                         </Link>
@@ -41,22 +41,22 @@ export function ApresentacoesLista() {
             <div className="w-full md:w-1/2 md:ml-[50%] pt-6 px-6 lg:px-16 text-white space-y-4 overflow-y-auto">
                 <section id="engenhariaSoftware" className="lg:px-16 text-white space-y-4">
                     <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Engenharia de Software</h1>
-                    <ApresentacaoDados />
+                    <ApresentacaoDadosEngSoft />
                 </section>
 
                 <section id="analiseDados" className="lg:px-16 text-white space-y-4">
                     <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Análise de Dados e BigData</h1>
-                    <ApresentacaoDados />
+                    <ApresentacaoDadosBigData />
                 </section>
 
                 <section id="ComputacaoGrafica" className="lg:px-16 text-white space-y-4">
                     <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Computação Gráfica e RV</h1>
-                    <ApresentacaoDados />
+                    <ApresentacaoCompGrafica />
                 </section>
 
-                <section id="ComputacaoGrafica2" className="lg:px-16 text-white space-y-4">
-                    <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Computação Gráfica e RV</h1>
-                    <ApresentacaoDados />
+                <section id="Governanca" className="lg:px-16 text-white space-y-4">
+                    <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Governança e Serviços de TI</h1>
+                    <ApresentacaoGovTi />
                 </section>
 
             </div>
