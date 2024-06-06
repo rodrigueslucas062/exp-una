@@ -15,7 +15,7 @@ const ApresentacoesInfoEngSoft = [
       "Guilherme da Costa,",
       "Rafael Coura,",
       "Bruna Luiza,",
-      "Victor Almeida,",
+      "Victor Almeida",
     ],
     hora: "08:50 às 09:50",
     dia: "Sexta-feira, 21/06"
@@ -29,7 +29,7 @@ const ApresentacoesInfoEngSoft = [
       "João Vitor De Sá,",
       "Carolina Vitória,",
       "Antônio Eustáquio,",
-      "Luiz Henrique,",
+      "Luiz Henrique",
     ],
     hora: "08:50 às 09:50",
     dia: "Sexta-feira, 21/06"
@@ -38,12 +38,9 @@ const ApresentacoesInfoEngSoft = [
     titulo: "Easy Gest",
     unidadeCurricular: "Eng. Software",
     descricao:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta esse reprehenderit quae magni, perferendis, nobis voluptas eos saepe a,et voluptatibus quo non illo labore ducimus quis? Ducimus, non!",
+    "FALTA DESCRIÇÃO",
     integrantes: [
-      "aluno,",
-      "aluno,",
-      "aluno,",
-      "aluno,",
+      "FALTAM OS NOMES,",
     ],
     hora: "08:50 às 09:50",
     dia: "Sexta-feira, 21/06"
@@ -57,7 +54,7 @@ const ApresentacoesInfoEngSoft = [
       "Junio Alves batista dias,",
       "Ariadne kelly braz damasceno,",
       "Leandro Gusmão Mayrink,",
-      "Gustavo Neves Braun,",
+      "Gustavo Neves Braun",
     ],
     hora: "08:50 às 09:50",
     dia: "Sexta-feira, 21/06"
@@ -84,11 +81,13 @@ const ApresentacoesInfoAnaliseBig = [
     titulo: "Features da Waymo",
     unidadeCurricular: "Analise de Dados e Big Data",
     descricao:
-      "Autonomia veicular",
+      "A Waymo é uma empresa líder em tecnologia de direção autônoma, cujas inovações prometem transformar a maneira como nos deslocamos. No entanto, no Brasil, a implementação da autonomia veicular enfrenta desafios únicos devido a questões como infraestrutura e regulamentação. Neste contexto, exploraremos as características da tecnologia da Waymo e as dificuldades específicas enfrentadas no Brasil.",
     integrantes: [
-      "Aluno,",
-      "Aluno,",
-      "Aluno,",
+      "Lincoln Henrique,",
+      "Eduardo Aguiar,",
+      "Gabriel Furtado,",
+      "Vinicius,",
+      "Matheus",
     ],
     hora: "08:50 às 09:50",
     dia: "Terça-feira, 18/06"
@@ -97,7 +96,7 @@ const ApresentacoesInfoAnaliseBig = [
     titulo: "Estado da arte dos carros autônomos no Brasil",
     unidadeCurricular: "Analise de Dados e Big Data",
     descricao:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta esse reprehenderit quae magni, perferendis, nobis voluptas eos saepe a,et voluptatibus quo non illo labore ducimus quis? Ducimus, non!",
+    "O Brasil está em estágios iniciais de adoção e implementação de veículos autônomos, enfrentando desafios como infraestrutura, regulamentação e segurança. Este resumo analisa o estado atual da tecnologia de carros autônomos no país, destacando iniciativas, desafios e perspectivas futuras.",
     integrantes: [
       "Renato Araujo,",
       "Guilherme Neves,",
@@ -112,93 +111,57 @@ const ApresentacoesInfoAnaliseBig = [
 
 const ApresentacoesInfoCompGrafica = [
   {
-    titulo: "Do liDAR ao Tesla Vision",
-    unidadeCurricular: "Analise de Dados e Big Data",
+    titulo: "Realidade Virtual - Casa UNA",
+    unidadeCurricular: "Computação Gráfica e Realidade Virtual",
     descricao:
-      "Dos tradicionais algoritmos LiDAR à inovadora abordagem do Tesla Vision, a Tesla redefine a autonomia veicular, prometendo uma direção autônoma precisa e segura.",
+      "Os usuários podem desfrutar de uma experiência imersiva, explorando cada detalhe da Casa UNA em 360 graus e interagindo com elementos arquitetônicos.",
     integrantes: [
-      "Eduardo Gomes,",
-      "Fábio Nacif,",
-      "gabriel Hirle,",
-      "Michel Prata,",
-      "Paulo Junior,",
+      "Lincoln Henrique,",
+      "Eduardo Aguiar,",
+      "Gabriel Furtado,",
+      "Vinicius,",
+      "Matheus",
     ],
     hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
+    dia: "Quinta-feira, 20/06"
   },
   {
-    titulo: "features da Waymo",
-    unidadeCurricular: "Analise de Dados e Big Data",
+    titulo: "Realidade Virtual - Entrada da Unidade Una Aimorés",
+    unidadeCurricular: "Computação Gráfica e Realidade Virtual",
     descricao:
-      "Autonomia veicular",
+      "Os usuários podem desfrutar de uma experiência imersiva, explorando cada detalhe da entrada da UNA Aimorés em 360 graus e interagindo com elementos arquitetônicos.",
     integrantes: [
-      "Aluno,",
-      "Aluno,",
-      "Aluno,",
+      "FALTAM OS NOMES,",
     ],
     hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
+    dia: "Quinta-feira, 20/06"
   },
   {
-    titulo: "Estado da arte dos carros autônomos no Brasil",
-    unidadeCurricular: "Analise de Dados e Big Data",
+    titulo: "Realidade Virtual - FALTA COISAS",
+    unidadeCurricular: "Computação Gráfica e Realidade Virtual",
     descricao:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta esse reprehenderit quae magni, perferendis, nobis voluptas eos saepe a,et voluptatibus quo non illo labore ducimus quis? Ducimus, non!",
+    "FALTA DESCRIÇÃO",
     integrantes: [
-      "Renato Araujo,",
-      "Guilherme Neves,",
-      "Rafael Dias,",
-      "Andrey Rodrigues,",
-      "Arthur Serafim,",
+    "FALTAM OS NOMES,",
     ],
     hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
+    dia: "Quinta-feira, 20/06"
   },
 ]
 
 const ApresentacoesInfoGovTi = [
   {
-    titulo: "Do liDAR ao Tesla Vision",
-    unidadeCurricular: "Analise de Dados e Big Data",
+    titulo: "Plano Estratégico de TI",
+    unidadeCurricular: "Governança e Serviços de TI",
     descricao:
-      "Dos tradicionais algoritmos LiDAR à inovadora abordagem do Tesla Vision, a Tesla redefine a autonomia veicular, prometendo uma direção autônoma precisa e segura.",
+      "Essa apresentação descreve o Plano Estratégico de Tecnologia da Informação (TI) da Indústria Arroz Kika. Este plano visa alinhar as iniciativas de TI com os objetivos de negócio da empresa, impulsionando a inovação, eficiência operacional e aprimoramento da competitividade no mercado.",
     integrantes: [
-      "Eduardo Gomes,",
-      "Fábio Nacif,",
-      "gabriel Hirle,",
-      "Michel Prata,",
-      "Paulo Junior,",
+      "João Vitor Rodrigues dos Anjos ,",
+      "Claúdia da Silva Reis,",
+      "Italo Delfino Amaro,",
     ],
-    hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
-  },
-  {
-    titulo: "features da Waymo",
-    unidadeCurricular: "Analise de Dados e Big Data",
-    descricao:
-      "Autonomia veicular",
-    integrantes: [
-      "Aluno,",
-      "Aluno,",
-      "Aluno,",
-    ],
-    hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
-  },
-  {
-    titulo: "Estado da arte dos carros autônomos no Brasil",
-    unidadeCurricular: "Analise de Dados e Big Data",
-    descricao:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure soluta esse reprehenderit quae magni, perferendis, nobis voluptas eos saepe a,et voluptatibus quo non illo labore ducimus quis? Ducimus, non!",
-    integrantes: [
-      "Renato Araujo,",
-      "Guilherme Neves,",
-      "Rafael Dias,",
-      "Andrey Rodrigues,",
-      "Arthur Serafim,",
-    ],
-    hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
+    hora: "10:30 às 11:30",
+    dia: "Quinta-feira, 20/06"
   },
 ]
 
