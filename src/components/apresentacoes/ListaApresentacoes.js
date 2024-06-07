@@ -38,7 +38,7 @@ const ApresentacoesInfoEngSoft = [
     titulo: "Easy Gest",
     unidadeCurricular: "Eng. Software",
     descricao:
-    "Projeto de aplicativo desenvolvido para  gestão e controle de estoque de forma simples e eficiente",
+    "Projeto de aplicativo desenvolvido para  gestão e controle de estoque de forma simples e eficiente.",
     integrantes: [
       "Paulo Henrique Domingos,",
       "Gabriel Jardim,",
