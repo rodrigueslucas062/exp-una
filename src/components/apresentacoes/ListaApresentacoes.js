@@ -75,7 +75,7 @@ const ApresentacoesInfoAnaliseBig = [
       "Fábio Nacif,",
       "gabriel Hirle,",
       "Michel Prata,",
-      "Paulo Junior,",
+      "Paulo Junior",
     ],
     hora: "08:50 às 09:50",
     dia: "Terça-feira, 18/06"
@@ -105,7 +105,7 @@ const ApresentacoesInfoAnaliseBig = [
       "Guilherme Neves,",
       "Rafael Dias,",
       "Andrey Rodrigues,",
-      "Arthur Serafim,",
+      "Arthur Serafim",
     ],
     hora: "08:50 às 09:50",
     dia: "Terça-feira, 18/06"
@@ -138,7 +138,7 @@ const ApresentacoesInfoCompGrafica = [
         "Fábio Nacif,",
         "gabriel Hirle,",
         "Michel Prata,",
-        "Paulo Junior,",
+        "Paulo Junior",
       ],
     hora: "08:50 às 09:50",
     dia: "Quinta-feira, 20/06"
@@ -169,7 +169,7 @@ const ApresentacoesInfoGovTi = [
     integrantes: [
       "João Vitor Rodrigues dos Anjos ,",
       "Claúdia da Silva Reis,",
-      "Italo Delfino Amaro,",
+      "Italo Delfino Amaro",
     ],
     hora: "10:30 às 11:30",
     dia: "Quinta-feira, 20/06"
