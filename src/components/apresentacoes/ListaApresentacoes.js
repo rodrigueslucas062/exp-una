@@ -66,7 +66,7 @@ const ApresentacoesInfoAnaliseBig = [
     titulo: "Do liDAR ao Tesla Vision",
     unidadeCurricular: "Analise de Dados e Big Data",
     descricao:
-      "Dos tradicionais algoritmos LiDAR à inovadora abordagem do Tesla Vision, a Tesla redefine a autonomia veicular, prometendo uma direção autônoma precisa e segura.",
+      "O projeto aborda os algoritmos Tesla Vision e LiDAR, ambos relacionados à empresa Tesla. Vamos explicar o que é cada um, as vantagens e desvantagens de cada tecnologia, e o motivo pelo qual a Tesla optou por abandonar o LiDAR.",
     integrantes: [
       "Eduardo Gomes,",
       "Fábio Nacif,",
@@ -129,10 +129,14 @@ const ApresentacoesInfoCompGrafica = [
     titulo: "Realidade Virtual - Entrada da Unidade Una Aimorés",
     unidadeCurricular: "Computação Gráfica e Realidade Virtual",
     descricao:
-      "Os usuários podem desfrutar de uma experiência imersiva, explorando cada detalhe da entrada da UNA Aimorés em 360 graus e interagindo com elementos arquitetônicos.",
-    integrantes: [
-      "FALTAM OS NOMES,",
-    ],
+      "O projeto consiste na modelagem 3D do campus Aimorés, os usuários podem desfrutar de uma experiência imersiva do Hall de entrada do campus, abrangendo desde o início do campus até os elevadores e refeitório.",
+      integrantes: [
+        "Eduardo Gomes,",
+        "Fábio Nacif,",
+        "gabriel Hirle,",
+        "Michel Prata,",
+        "Paulo Junior,",
+      ],
     hora: "08:50 às 09:50",
     dia: "Quinta-feira, 20/06"
   },
@@ -140,9 +144,13 @@ const ApresentacoesInfoCompGrafica = [
     titulo: "Realidade Virtual - FALTA COISAS",
     unidadeCurricular: "Computação Gráfica e Realidade Virtual",
     descricao:
-    "FALTA DESCRIÇÃO",
+    "O projeto consiste na modelagem 3D do campus Aimorés, os usuários podem desfrutar de uma experiência imersiva da lanchonete do campus, explorando cada detalhe e interagindo com elementos.",
     integrantes: [
-    "FALTAM OS NOMES,",
+    "Renato Araujo,",
+    "Guilherme Neves,",
+    "Rafael Dias,",
+    "Andrey Rodrigues,",
+   " Gabriel Hirle",
     ],
     hora: "08:50 às 09:50",
     dia: "Quinta-feira, 20/06"
