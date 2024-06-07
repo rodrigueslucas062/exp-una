@@ -38,9 +38,12 @@ const ApresentacoesInfoEngSoft = [
     titulo: "Easy Gest",
     unidadeCurricular: "Eng. Software",
     descricao:
-    "FALTA DESCRIÇÃO",
+    "Projeto de aplicativo desenvolvido para  gestão e controle de estoque de forma simples e eficiente",
     integrantes: [
-      "FALTAM OS NOMES,",
+      "Paulo Henrique Domingos,",
+      "Gabriel Jardim,",
+      "Geisiane Silva,",
+      "Henrique Machado",
     ],
     hora: "08:50 às 09:50",
     dia: "Sexta-feira, 21/06"
