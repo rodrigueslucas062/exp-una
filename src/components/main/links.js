@@ -26,13 +26,14 @@ const Paginas = ({ link, titulo, icone }) => {
 
   const handleLinkClick = (e) => {
     if (!e.defaultPrevented) {
-      window.open(link);
+      window.location.href = link;
     }
   };
 
   const handleCopyLink = (e) => {
     e.stopPropagation();
-    navigator.clipboard.writeText(link);
+    const fullLink = window.location.origin + link;
+    navigator.clipboard.writeText(fullLink);
     toast.success("Link copiado", {
       position: "bottom-center",
       duration: 2000,
