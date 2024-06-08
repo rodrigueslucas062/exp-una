@@ -1,6 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
-import { Home, ChevronRight, Ellipsis, Share2, X } from "lucide-react";
+import { Home, ChevronRight, Ellipsis, Share2, X, FlaskConical } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Logo from '../../../public/images/Logo.jpeg';
@@ -108,6 +108,14 @@ export default function Navbar() {
                                                 </button>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div className="flex text-white font-semibold mt-auto pb-2 w-3/4 lg:w-3/5 mx-auto flex-col space-y-2 bottom-0">
+                                    <span className="text-sm">Esse site é nossa apresentação da ExpoUna</span>
+                                        <Link href={'/contribuidores'} className="flex justify-center">
+                                            <span className="text-sm">Texto</span>
+                                            <FlaskConical className="text-lime-500" />{" "}
+                                            <span className="text-sm">Texto</span>
+                                        </Link>
                                     </div>
                                 </motion.div >
                             </Dialog.Content>
