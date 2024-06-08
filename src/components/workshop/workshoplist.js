@@ -12,7 +12,7 @@ const lista = [
     titulo: "HTML e CSS",
     descricao:
       "Use HTML e CSS para estruturar seus sites. Crie designs incríveis e personalizados com CSS, dando vida às suas páginas.",
-    sala: "301",
+    sala: "201",
     horario: "08:50-09:50",
     dia: "Segunda-feira, 17/06",
     sympla: "",
@@ -22,7 +22,7 @@ const lista = [
     titulo: "Git",
     descricao:
       "Torne-se um especialista em Git, a ferramenta essencial para controle de versão de software. Aprenda a trabalhar em equipe com eficiência, rastreando alterações e versionamento do seu código.",
-    sala: "601",
+    sala: "1106",
     horario: "10:30-11:30",
     dia: "Segunda-feira, 17/06",
     sympla: "",
@@ -32,7 +32,7 @@ const lista = [
     titulo: "SQL",
     descricao:
       "Domine a linguagem SQL para gerenciar e consultar bancos de dados. Aprenda a armazenar, organizar e recuperar informações com maestria.",
-    sala: "401",
+    sala: "1106",
     horario: "10:30-11:30",
     dia: "terça-feira, 18/06",
     sympla: "",
@@ -52,7 +52,7 @@ const lista = [
     titulo: "Blender",
     descricao:
       "Dê vida à sua imaginação com o Blender, um software de modelagem 3D gratuito e poderoso. Aprenda os fundamentos da criação de modelos 3D, animações e efeitos visuais.",
-    sala: "501",
+    sala: "206",
     horario: "10:30-11:30",
     dia: "Quinta-feira 21/06",
     sympla: "",

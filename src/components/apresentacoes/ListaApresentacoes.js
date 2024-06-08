@@ -18,7 +18,8 @@ const ApresentacoesInfoEngSoft = [
       "Victor Almeida",
     ],
     hora: "08:50 às 09:50",
-    dia: "Sexta-feira, 21/06"
+    dia: "Sexta-feira, 21/06",
+    sala: '901',
   },
   {
     titulo: "Pipo Filmes",
@@ -32,21 +33,8 @@ const ApresentacoesInfoEngSoft = [
       "Luiz Henrique",
     ],
     hora: "08:50 às 09:50",
-    dia: "Sexta-feira, 21/06"
-  },
-  {
-    titulo: "Easy Gest",
-    unidadeCurricular: "Eng. Software",
-    descricao:
-    "Projeto de aplicativo desenvolvido para  gestão e controle de estoque de forma simples e eficiente.",
-    integrantes: [
-      "Paulo Henrique Domingos,",
-      "Gabriel Jardim,",
-      "Geisiane Silva,",
-      "Henrique Machado",
-    ],
-    hora: "08:50 às 09:50",
-    dia: "Sexta-feira, 21/06"
+    dia: "Sexta-feira, 21/06",
+    sala: '901',
   },
   {
     titulo: "Geek Owl",
@@ -60,7 +48,23 @@ const ApresentacoesInfoEngSoft = [
       "Gustavo Neves Braun",
     ],
     hora: "08:50 às 09:50",
-    dia: "Sexta-feira, 21/06"
+    dia: "Sexta-feira, 21/06",
+    sala: '901',
+  },
+  {
+    titulo: "Geek Owl",
+    unidadeCurricular: "Eng. Software",
+    descricao:
+    "O GeekOwl é um site feito para catalogar animes e jogos existentes, reunindo informações sobre eles como duração, gênero, staff (diretor, dubladores, etc), prêmios e outras coisas. Ele também serve como uma lista que o usuário pode escolher e selecionar animes/jogos que ele já assistiu e salvar para assim ter um histórico de tudo que já viu e jogou, além de poder escolher seus favoritos, dar notas e conversar com outras pessoas sobre.",
+    integrantes: [
+      "Junio Alves batista dias,",
+      "Ariadne kelly braz damasceno,",
+      "Leandro Gusmão Mayrink,",
+      "Gustavo Neves Braun",
+    ],
+    hora: "08:50 às 09:50",
+    dia: "Sexta-feira, 21/06",
+    sala: '901',
   },
 ];
 
@@ -75,10 +79,11 @@ const ApresentacoesInfoAnaliseBig = [
       "Fábio Nacif,",
       "gabriel Hirle,",
       "Michel Prata,",
-      "Paulo Junior",
+      "Paulo Junior,",
     ],
     hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
+    dia: "Terça-feira, 18/06",
+    sala: '201',
   },
   {
     titulo: "Features da Waymo",
@@ -93,7 +98,8 @@ const ApresentacoesInfoAnaliseBig = [
       "Matheus",
     ],
     hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
+    dia: "Terça-feira, 18/06",
+    sala: '201',
   },
   {
     titulo: "Estado da arte dos carros autônomos no Brasil",
@@ -105,10 +111,11 @@ const ApresentacoesInfoAnaliseBig = [
       "Guilherme Neves,",
       "Rafael Dias,",
       "Andrey Rodrigues,",
-      "Arthur Serafim",
+      "Arthur Serafim,",
     ],
     hora: "08:50 às 09:50",
-    dia: "Terça-feira, 18/06"
+    dia: "Terça-feira, 18/06",
+    sala: '201',
   },
 ];
 
@@ -126,7 +133,8 @@ const ApresentacoesInfoCompGrafica = [
       "Matheus",
     ],
     hora: "08:50 às 09:50",
-    dia: "Quinta-feira, 20/06"
+    dia: "Quinta-feira, 20/06",
+    sala: '1105',
   },
   {
     titulo: "Realidade Virtual - Entrada da Unidade Una Aimorés",
@@ -138,10 +146,11 @@ const ApresentacoesInfoCompGrafica = [
         "Fábio Nacif,",
         "gabriel Hirle,",
         "Michel Prata,",
-        "Paulo Junior",
+        "Paulo Junior,",
       ],
     hora: "08:50 às 09:50",
-    dia: "Quinta-feira, 20/06"
+    dia: "Quinta-feira, 20/06",
+    sala: '1105',
   },
   {
     titulo: "Realidade Virtual - FALTA COISAS",
@@ -156,7 +165,8 @@ const ApresentacoesInfoCompGrafica = [
    " Gabriel Hirle",
     ],
     hora: "08:50 às 09:50",
-    dia: "Quinta-feira, 20/06"
+    dia: "Quinta-feira, 20/06",
+    sala: '1105',
   },
 ]
 
@@ -169,10 +179,11 @@ const ApresentacoesInfoGovTi = [
     integrantes: [
       "João Vitor Rodrigues dos Anjos ,",
       "Claúdia da Silva Reis,",
-      "Italo Delfino Amaro",
+      "Italo Delfino Amaro,",
     ],
     hora: "10:30 às 11:30",
-    dia: "Quinta-feira, 20/06"
+    dia: "Quinta-feira, 20/06",
+    sala: '1106',
   },
 ]
 
@@ -188,6 +199,7 @@ export function ApresentacaoDadosEngSoft() {
             integrantes={info.integrantes}
             hora={info.hora}
             dia={info.dia}
+            sala={info.sala}
           />
         </div>
       ))}
@@ -207,6 +219,7 @@ export function ApresentacaoDadosBigData() {
             integrantes={info.integrantes}
             hora={info.hora}
             dia={info.dia}
+            sala={info.sala}
           />
         </div>
       ))}
@@ -226,6 +239,7 @@ export function ApresentacaoCompGrafica() {
             integrantes={info.integrantes}
             hora={info.hora}
             dia={info.dia}
+            sala={info.sala}
           />
         </div>
       ))}
@@ -245,6 +259,7 @@ export function ApresentacaoGovTi() {
             integrantes={info.integrantes}
             hora={info.hora}
             dia={info.dia}
+            sala={info.sala}
           />
         </div>
       ))}
@@ -252,7 +267,7 @@ export function ApresentacaoGovTi() {
   );
 }
 
-function ApresentacoeGovTi({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia }) {
+function ApresentacoeGovTi({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia, sala }) {
   const {ref, inView} = useInViewHook(0.1);
   return (
     <article ref={ref} className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
@@ -264,7 +279,7 @@ function ApresentacoeGovTi({ titulo, descricao, unidadeCurricular, integrantes =
       </div>
       <div className="space-y-1 mb-2">
       <h2 className="text-2xl font-bold tracking-tight text-white">{titulo}</h2>
-      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora}</span></p>
+      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora} </span> sala: <span className="text-purple-500 font-semibold">{sala}</span></p>
       </div>
       <p className="mb-5 font-light text-gray-400">{descricao}</p>
       <div className="flex justify-between items-center">
@@ -289,7 +304,7 @@ function ApresentacoeGovTi({ titulo, descricao, unidadeCurricular, integrantes =
   );
 }
 
-function ApresentacoesCompGrafica({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia }) {
+function ApresentacoesCompGrafica({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia, sala }) {
   const {ref, inView} = useInViewHook(0.1);
   return (
     <article ref={ref} className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
@@ -301,7 +316,7 @@ function ApresentacoesCompGrafica({ titulo, descricao, unidadeCurricular, integr
       </div>
       <div className="space-y-1 mb-2">
       <h2 className="text-2xl font-bold tracking-tight text-white">{titulo}</h2>
-      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora}</span></p>
+      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora} </span> sala: <span className="text-purple-500 font-semibold">{sala}</span></p>
       </div>
       <p className="mb-5 font-light text-gray-400">{descricao}</p>
       <div className="flex justify-between items-center">
@@ -326,7 +341,7 @@ function ApresentacoesCompGrafica({ titulo, descricao, unidadeCurricular, integr
   );
 }
 
-function ApresentacoesBigData({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia }) {
+function ApresentacoesBigData({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia, sala }) {
   const {ref, inView} = useInViewHook(0.1);
   return (
     <article ref={ref} className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
@@ -338,7 +353,7 @@ function ApresentacoesBigData({ titulo, descricao, unidadeCurricular, integrante
       </div>
       <div className="space-y-1 mb-2">
       <h2 className="text-2xl font-bold tracking-tight text-white">{titulo}</h2>
-      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora}</span></p>
+      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora}</span> sala: <span className="text-purple-500 font-semibold">{sala}</span></p>
       </div>
       <p className="mb-5 font-light text-gray-400">{descricao}</p>
       <div className="flex justify-between items-center">
@@ -363,7 +378,7 @@ function ApresentacoesBigData({ titulo, descricao, unidadeCurricular, integrante
   );
 }
 
-function ApresentacoesEngSoftware({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia }) {
+function ApresentacoesEngSoftware({ titulo, descricao, unidadeCurricular, integrantes = [], hora, dia, sala }) {
   const {ref, inView} = useInViewHook(0.1);
   return (
     <article ref={ref} className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
@@ -375,7 +390,7 @@ function ApresentacoesEngSoftware({ titulo, descricao, unidadeCurricular, integr
       </div>
       <div className="space-y-1 mb-2">
       <h2 className="text-2xl font-bold tracking-tight text-white">{titulo}</h2>
-      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora}</span></p>
+      <p className="text-sm">Apresentação: <span className="text-purple-500 font-semibold">{dia}</span> das <span className="text-purple-500 font-semibold">{hora}</span> sala: <span className="text-purple-500 font-semibold">{sala}</span></p>
       </div>
       <p className="mb-5 font-light text-gray-400">{descricao}</p>
       <div className="flex justify-between items-center">
