@@ -38,7 +38,7 @@ export function ApresentacoesLista() {
                 </div>
             </div>
 
-            <div className="w-full md:w-1/2 md:ml-[50%] pt-6 px-6 lg:px-16 text-white space-y-4 overflow-y-auto">
+            <div className="w-full md:w-1/2 md:ml-[50%] py-6 px-6 lg:px-16 text-white space-y-4 overflow-y-auto">
                 <section id="engenhariaSoftware" className="lg:px-16 text-white space-y-4">
                     <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Engenharia de Software</h1>
                     <ApresentacaoDadosEngSoft />
@@ -54,7 +54,7 @@ export function ApresentacoesLista() {
                     <ApresentacaoCompGrafica />
                 </section>
 
-                <section id="Governanca" className="lg:px-16 text-white space-y-4">
+                <section id="Governanca" className="lg:px-16 text-white space-y-4 pb-10">
                     <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Governança e Serviços de TI</h1>
                     <ApresentacaoGovTi />
                 </section>
