@@ -12,8 +12,8 @@ const sectionNames = {
     expoUna: "ExpoUna",
     apresentacoesLista: "Apresentações",
     engenhariaSoftware: "Eng. de Software",
-    analiseDados: "Analise de Dados e BigData",
-    ComputacaoGrafica: "Computação Gráfica e RV",
+    analiseDados: "Análise de Dados e BigData",
+    ComputacaoGrafica: "Comp. Gráfica e RV",
     Governanca: "Gov. e Serviços de Ti",
     workshops: "Workshops",
     palestra: "Palestras",
@@ -62,7 +62,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed flex top-4 w-full justify-center px-2 z-20 font-semibold text-white">
-            <div className={`flex w-full lg:w-2/5 ring-1 ring-white bg-zinc-900/[0.6] items-center justify-between px-4 py-2 rounded-full backdrop-blur-sm transition-visible duration-500 ease-in-out ${isMenuVisible ? '' : 'invisible'}`}>
+            <div className={`flex w-full lg:w-2/5 bg-zinc-900/[0.6] items-center justify-between px-4 py-2 rounded-full backdrop-blur-sm transition-visible duration-500 ease-in-out ${isMenuVisible ? '' : 'invisible'}`}>
                 <Link href="/" >
                     <Image src={Logo} className="ring-1 ring-white px-2 p-1 rounded-xl" width={50} height={50} />
                 </Link>
