@@ -5,6 +5,7 @@ import Logo from '../../../public/images/Logo.jpeg';
 import Link from "next/link";
 import Image from "next/image";
 import { useInViewHook } from "@/utils/hooks/use-in-view.hook";
+import SymplaButton from "@/utils/ui/Sympla";
 
 export default function Workshop() {
   const { ref, inView } = useInViewHook(0.5);
@@ -43,11 +44,12 @@ export default function Workshop() {
       <div className="w-full md:w-1/2 md:ml-[50%] p-6 lg:px-16 text-white space-y-4 overflow-y-auto">
         <div ref={ref} className={`md:mt-16 ${inView && "animate-fade-right"}`}>
           <h1 className={`mb-5 text-3xl font-semibold `}>Aulas disponíveis</h1>
-          <Link href={''}>Confira todas as entradas atraves do nosso <span className="text-purple-500 font-semibold">Sympla</span> </Link>
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-sm font-semibold text-gray-300">Ingressos:</span>
+            <SymplaButton />
+          </div>
         </div>
-
         <Apresentacao />
-
       </div>
     </section>
   );
