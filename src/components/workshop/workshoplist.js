@@ -12,7 +12,7 @@ const lista = [
     titulo: "HTML e CSS",
     descricao:
       "Use HTML e CSS para estruturar seus sites. Crie designs incríveis e personalizados com CSS, dando vida às suas páginas.",
-    sala: "201",
+    sala: "1105",
     horario: "08:50-09:50",
     dia: "Segunda-feira, 17/06",
     sympla: "https://www.sympla.com.br/evento/expouna/2500389",
@@ -32,7 +32,7 @@ const lista = [
     titulo: "SQL",
     descricao:
       "Domine a linguagem SQL para gerenciar e consultar bancos de dados. Aprenda a armazenar, organizar e recuperar informações com maestria.",
-    sala: "1106",
+    sala: "1105",
     horario: "10:30-11:30",
     dia: "terça-feira, 18/06",
     sympla: "https://www.sympla.com.br/evento/expouna/2500389",
@@ -42,11 +42,9 @@ const lista = [
     titulo: "Excel",
     descricao:
       "Transforme-se em um mestre de planilhas com o Excel. Aprenda a organizar, analisar e visualizar dados de forma eficiente, otimizando seu tempo e trabalho.",
-    sala: "201",
+    sala: "1105",
     horario: "10:30-11:30",
     dia: "Sexta-feira 21/06",
-    sympla: "",
-    dia: "Quarta-feira 19/06",
     sympla: "https://www.sympla.com.br/evento/expouna/2500389",
   },
   {
@@ -57,8 +55,6 @@ const lista = [
     sala: "206",
     horario: "10:30-11:30",
     dia: "Quarta-feira 19/06",
-    sympla: "",
-    dia: "Quinta-feira 21/06",
     sympla: "https://www.sympla.com.br/evento/expouna/2500389",
   },
 ];
