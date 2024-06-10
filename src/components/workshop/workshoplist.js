@@ -44,7 +44,7 @@ const lista = [
       "Transforme-se em um mestre de planilhas com o Excel. Aprenda a organizar, analisar e visualizar dados de forma eficiente, otimizando seu tempo e trabalho.",
     sala: "201",
     horario: "10:30-11:30",
-    dia: "Quarta-feira 19/06",
+    dia: "Sexta-feira 21/06",
     sympla: "",
   },
   {
@@ -54,7 +54,7 @@ const lista = [
       "Dê vida à sua imaginação com o Blender, um software de modelagem 3D gratuito e poderoso. Aprenda os fundamentos da criação de modelos 3D, animações e efeitos visuais.",
     sala: "206",
     horario: "10:30-11:30",
-    dia: "Quinta-feira 21/06",
+    dia: "Quarta-feira 19/06",
     sympla: "",
   },
 ];
