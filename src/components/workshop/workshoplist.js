@@ -15,7 +15,7 @@ const lista = [
     sala: "201",
     horario: "08:50-09:50",
     dia: "Segunda-feira, 17/06",
-    sympla: "",
+    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
   },
   {
     img: Images.Git,
@@ -25,7 +25,7 @@ const lista = [
     sala: "1106",
     horario: "10:30-11:30",
     dia: "Segunda-feira, 17/06",
-    sympla: "",
+    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
   },
   {
     img: Images.Sql,
@@ -35,7 +35,7 @@ const lista = [
     sala: "1106",
     horario: "10:30-11:30",
     dia: "terça-feira, 18/06",
-    sympla: "",
+    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
   },
   {
     img: Images.Excel,
@@ -46,6 +46,8 @@ const lista = [
     horario: "10:30-11:30",
     dia: "Sexta-feira 21/06",
     sympla: "",
+    dia: "Quarta-feira 19/06",
+    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
   },
   {
     img: Images.Blender,
@@ -56,6 +58,8 @@ const lista = [
     horario: "10:30-11:30",
     dia: "Quarta-feira 19/06",
     sympla: "",
+    dia: "Quinta-feira 21/06",
+    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
   },
 ];
 
