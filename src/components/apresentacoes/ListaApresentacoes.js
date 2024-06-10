@@ -1,5 +1,6 @@
 import { useInViewHook } from "@/utils/hooks/use-in-view.hook";
 import { ArrowRight, GraduationCap } from "lucide-react";
+import SymplaButton from "@/utils/ui/Sympla";
 
 const ApresentacoesInfoEngSoft = [
   {
@@ -292,12 +293,10 @@ function ApresentacoeGovTi({ titulo, descricao, unidadeCurricular, integrantes =
               </span>
             ))}
           </div>
-          <a
-            href="#"
+          <div
             className="inline-flex items-center font-medium text-white text-primary-600 text-primary-500 hover:underline gap-2" >
-            Ver mais
-            <ArrowRight size={18} />
-          </a>
+            <SymplaButton />
+          </div>
         </div>
       </div>
     </article>
@@ -329,12 +328,10 @@ function ApresentacoesCompGrafica({ titulo, descricao, unidadeCurricular, integr
               </span>
             ))}
           </div>
-          <a
-            href="#"
+          <div
             className="inline-flex items-center font-medium text-white text-primary-600 text-primary-500 hover:underline gap-2" >
-            Ver mais
-            <ArrowRight size={18} />
-          </a>
+            <SymplaButton />
+          </div>
         </div>
       </div>
     </article>
@@ -366,12 +363,10 @@ function ApresentacoesBigData({ titulo, descricao, unidadeCurricular, integrante
               </span>
             ))}
           </div>
-          <a
-            href="#"
+          <div
             className="inline-flex items-center font-medium text-white text-primary-600 text-primary-500 hover:underline gap-2" >
-            Ver mais
-            <ArrowRight size={18} />
-          </a>
+            <SymplaButton />
+          </div>
         </div>
       </div>
     </article>
@@ -403,12 +398,10 @@ function ApresentacoesEngSoftware({ titulo, descricao, unidadeCurricular, integr
               </span>
             ))}
           </div>
-          <a
-            href="#"
+          <div
             className="inline-flex items-center font-medium text-white text-primary-600 text-primary-500 hover:underline gap-2" >
-            Ver mais
-            <ArrowRight size={18} />
-          </a>
+            <SymplaButton />
+          </div>
         </div>
       </div>
     </article>
