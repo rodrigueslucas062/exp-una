@@ -110,12 +110,12 @@ export default function Navbar() {
                                         </div>
                                     </div>
                                     <div className="flex text-white font-semibold mt-auto pb-2 w-3/4 lg:w-3/5 mx-auto flex-col space-y-2 bottom-0">
-                                    <span className="text-sm">Esse site é nossa apresentação da ExpoUna</span>
+                                    {/*<span className="text-sm">Esse site é nossa apresentação da ExpoUna</span>
                                         <Link href={'/contribuidores'} className="flex justify-center">
                                             <span className="text-sm">Texto</span>
                                             <FlaskConical className="text-lime-500" />{" "}
                                             <span className="text-sm">Texto</span>
-                                        </Link>
+                                        </Link>*/}
                                     </div>
                                 </motion.div >
                             </Dialog.Content>
