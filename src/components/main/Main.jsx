@@ -16,7 +16,7 @@ export function Main() {
       <div className="flex flex-col items-center space-y-4">
         <Links />
       </div>
-      <div className="flex flex-col items-center pt-6">
+      <div className="flex flex-col items-center pt-24">
         <div className="flex items-center gap-2 mb-4">
           <span className="text-sm font-semibold text-gray-300">Ingressos:</span>
           <SymplaButton />

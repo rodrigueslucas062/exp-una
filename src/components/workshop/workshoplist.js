@@ -1,10 +1,10 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
-import { ChevronRight, Share2, X } from "lucide-react";
+import { ChevronRight, Library, X } from "lucide-react";
 import Image from "next/image";
 import * as Images from "../../utils/images.js";
-import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+import SymplaButton from "@/utils/ui/Sympla.js";
+import { toast } from "sonner";
 
 const lista = [
   {
@@ -15,7 +15,31 @@ const lista = [
     sala: "1105",
     horario: "08:50-09:50",
     dia: "Segunda-feira, 17/06",
-    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
+    detalhes: `HTML é a linguagem de 
+      <span className="text-purple-500 font-bold">
+        marcação utilizada para estruturar o conteúdo na web
+      </span>
+      . Ele define a 
+      <span className="text-purple-500 font-bold">
+        semântica dos elementos
+      </span> 
+      que compõem uma página, como parágrafos, cabeçalhos, e muito mais. 
+      <span className="text-purple-500 font-bold">
+        HTML usa tags para encapsular diferentes partes do conteúdo
+      </span>
+      , permitindo que os navegadores exibam o conteúdo de forma organizada. CSS 
+      <span className="text-purple-500 font-bold">
+        é a linguagem de estilo utilizada para definir a aparência e o layout
+      </span> 
+      das páginas web. Com CSS, você pode controlar aspectos visuais como cores, fontes, espaçamento, alinhamento e disposição dos elementos na tela.
+      CSS permite a separação entre o conteúdo (HTML) e a apresentação visual, facilitando a manutenção e a atualização do design de um site. 
+      <span className="text-purple-500 font-bold">
+        CSS é aplicado aos elementos HTML através de seletores
+      </span> 
+      que podem ser baseados em 
+      <span className="text-purple-500 font-bold">
+        tags, classes, IDs ou atributos
+      </span>.`,
   },
   {
     img: Images.Git,
@@ -25,7 +49,7 @@ const lista = [
     sala: "1106",
     horario: "10:30-11:30",
     dia: "Segunda-feira, 17/06",
-    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
+    detalhes: "Ainda em elaboração",
   },
   {
     img: Images.Sql,
@@ -35,7 +59,7 @@ const lista = [
     sala: "1105",
     horario: "10:30-11:30",
     dia: "terça-feira, 18/06",
-    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
+    detalhes: "Ainda em elaboração",
   },
   {
     img: Images.Excel,
@@ -45,7 +69,7 @@ const lista = [
     sala: "1105",
     horario: "10:30-11:30",
     dia: "Sexta-feira 21/06",
-    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
+    detalhes: "Ainda em elaboração",
   },
   {
     img: Images.Blender,
@@ -55,7 +79,7 @@ const lista = [
     sala: "206",
     horario: "10:30-11:30",
     dia: "Quarta-feira 19/06",
-    sympla: "https://www.sympla.com.br/evento/expouna/2500389",
+    detalhes: "Ainda em elaboração",
   },
 ];
 
@@ -71,7 +95,7 @@ export default function Apresentacao() {
             sala={info.sala}
             dia={info.dia}
             horario={info.horario}
-            sympla={info.sympla}
+            detalhes={info.detalhes}
           />
         </div>
       ))}
@@ -79,7 +103,31 @@ export default function Apresentacao() {
   );
 }
 
-function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, sympla }) {
+function MaterialComplementar({ texto }) {
+  const handleClick = () => {
+    toast.success('Disponível na semana do evento', {
+      position: 'bottom-center',
+      duration: 2000,
+  })
+  };
+
+  return (
+    <div className="flex flex-col items-center space-y-4">
+      <button 
+        className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+        onClick={handleClick}
+      >
+        <Library />
+        <span>Material complementar</span>
+        <ChevronRight />
+      </button>
+      <p className="text-wrap text-center pb-4" dangerouslySetInnerHTML={{ __html: texto }}>
+      </p>
+    </div>
+  );
+}
+
+function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, detalhes }) {
   const shadowStyle = { boxShadow: "10px 10px 0px rgba(0, 0, 0, 0.40)" };
 
   return (
@@ -118,17 +166,13 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, s
           </div>
 
           <div className="flex mt-4 md:mt-auto flex-col">
-            <div className="flex justify-between">
+            <div className="flex justify-between pt-4">
               <Dialog.Trigger className="text-small text-white">
                 <span>Saiba mais</span>
               </Dialog.Trigger>
-              <Link
-                href={sympla}
-                className="flex gap-2 items-center text-small text-white"
-              >
-                <span>Sympla</span>
-                <ExternalLink size={16} />
-              </Link>
+              <div className="flex gap-2 items-center text-small text-white">
+                <SymplaButton />
+              </div>
 
               <Dialog.Portal>
                 <Dialog.DialogOverlay className="inset-0 fixed bg-black/20">
@@ -142,19 +186,15 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, s
                       <Dialog.Close className="bg-zinc-900/60 p-1 rounded-full text-white ring-1 ring-zinc-900 absolute top-2 right-2">
                         <X className="size-5" />
                       </Dialog.Close>
-                      <div className="flex flex-col items-center gap-3 px-2 lg:px-4 pt-2">
-                        <div className="rounded-lg mt-8 lg:mt-8 justify-center inline-block w-3/4 lg:w-3/5 relative text-white">
-                          <div className="flex justify-center mb-8">
+                      <div className="flex flex-col items-center gap-3 lg:px-4 pt-2">
+                        <div className="rounded-lg mt-8 lg:mt-8 justify-center inline-block w-3/4 lg:w-3/5 relative text-white 4 overflow-y-auto max-h-[50vh]">
+                          <div className="flex justify-center mb-4">
                             <span className="font-semibold text-lg">
                               {titulo}
                             </span>
                           </div>
-                          <div className="flex flex-col bg-gray-100/10 space-y-4 lg:space-y-1.5 font-semibold">
-                            <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3">
-                              <Share2 />
-                              <span>Compartilhar link</span>
-                              <ChevronRight />
-                            </button>
+                          <div className="flex flex-col items-center space-y-4">
+                            <MaterialComplementar texto={detalhes} />
                           </div>
                         </div>
                       </div>
