@@ -1,6 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
-import { ChevronRight, MoreHorizontal, Share2, X, } from "lucide-react";
+import { ChevronRight, MoreHorizontal, Share2, X } from "lucide-react";
 import { toast } from "sonner";
 
 const Links = [
@@ -45,7 +45,11 @@ const Paginas = ({ link, titulo, icone }) => {
       <div className="flex justify-between items-center cursor-pointer p-3 rounded-lg w-full md:w-1/3 backdrop-blur-sm bg-zinc-100/[0.03] text-white text-lg font-semibold ring-1 ring-white"
         style={shadowStyle}
         onClick={handleLinkClick} >
-        <div>{icone}</div>
+        {/* <div>{icone}</div> */}
+        <div
+          className="bg-gray-100/10 p-1 rounded-full text-white ring-1 ring-zinc-900 invisible">
+          <MoreHorizontal />
+        </div>
         <span>{titulo}</span>
         <Dialog.Trigger
           className="bg-gray-100/10 p-1 rounded-full text-white ring-1 ring-zinc-900"
@@ -73,8 +77,10 @@ const Paginas = ({ link, titulo, icone }) => {
                     <span className="font-semibold text-lg">{titulo}</span>
                   </div>
                   <div className="flex flex-col bg-gray-100/10 space-y-4 lg:space-y-1.5 font-semibold">
-                    <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
-                      onClick={handleCopyLink} >
+                    <button
+                      className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+                      onClick={handleCopyLink}
+                    >
                       <Share2 />
                       <span>Compartilhar link</span>
                       <ChevronRight />
@@ -86,7 +92,6 @@ const Paginas = ({ link, titulo, icone }) => {
           </Dialog.Content>
         </Dialog.DialogOverlay>
       </Dialog.Portal>
-
     </Dialog.Root>
   );
 };
