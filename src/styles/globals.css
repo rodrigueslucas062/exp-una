@@ -17,11 +17,25 @@
 }
 
 body {
-@apply bg-zinc-950
+  @apply bg-zinc-950;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
   }
 }
