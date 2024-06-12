@@ -55,48 +55,64 @@ const lista = [
 ];
 
 function DetalhesWorkshop({ titulo }) {
+  const Html = '/material/Html.pdf'
+  const Git = '/material/Git.pdf'
+  const SQL = '/material/SQL.pdf'
+  const Excel = '/material/Excel.pdf'
+  const Blender = '/material/Blender.pdf'
+
   switch (titulo) {
     case "HTML e CSS":
       return (
-        <div className="pb-6">
+        <div className="pb-6 space-y- items-center4">
+          <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+            <Library />
+            <span>Material complementar</span>
+            <ChevronRight />
+          </button>
           <p>
-            HTML é a linguagem de
+            HTML é a linguagem de{" "}
             <span className="text-purple-500 font-bold">
               marcação utilizada para estruturar o conteúdo na web
-            </span>
+            </span>{" "}
             . Ele define a
-            <span className="text-purple-500 font-bold">
+            {" "}<span className="text-purple-500 font-bold">
               semântica dos elementos
-            </span>
+            </span>{" "}
             que compõem uma página, como parágrafos, cabeçalhos, e muito mais.
-            <span className="text-purple-500 font-bold">
+            {" "}<span className="text-purple-500 font-bold">
               HTML usa tags para encapsular diferentes partes do conteúdo
-            </span>
+            </span>{" "}
             , permitindo que os navegadores exibam o conteúdo de forma
             organizada. CSS
-            <span className="text-purple-500 font-bold">
+            {" "}<span className="text-purple-500 font-bold">
               é a linguagem de estilo utilizada para definir a aparência e o
               layout
-            </span>
+            </span>{" "}
             das páginas web. Com CSS, você pode controlar aspectos visuais como
             cores, fontes, espaçamento, alinhamento e disposição dos elementos
             na tela. CSS permite a separação entre o conteúdo (HTML) e a
             apresentação visual, facilitando a manutenção e a atualização do
             design de um site.
-            <span className="text-purple-500 font-bold">
+            {" "}<span className="text-purple-500 font-bold">
               CSS é aplicado aos elementos HTML através de seletores
-            </span>
+            </span>{" "}
             que podem ser baseados em
-            <span className="text-purple-500 font-bold">
+            {" "}<span className="text-purple-500 font-bold">
               tags, classes, IDs ou atributos
-            </span>
+            </span>{" "}
             .
           </p>
         </div>
       );
     case "Git":
       return (
-        <div>
+        <div className="pb-6 space-y-4 items-center">
+          <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+            <Library />
+            <span>Material complementar</span>
+            <ChevronRight />
+          </button>
           <p>
             Torne-se um especialista em Git, a ferramenta essencial para
             controle de versão de software. Aprenda a trabalhar em equipe com
@@ -106,7 +122,12 @@ function DetalhesWorkshop({ titulo }) {
       );
     case "SQL":
       return (
-        <div>
+        <div className="pb-6 space-y-4 items-center">
+          <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+            <Library />
+            <span>Material complementar</span>
+            <ChevronRight />
+          </button>
           <p>
             Domine a linguagem SQL para gerenciar e consultar bancos de dados.
             Aprenda a armazenar, organizar e recuperar informações com maestria.
@@ -115,7 +136,12 @@ function DetalhesWorkshop({ titulo }) {
       );
     case "Excel":
       return (
-        <div>
+        <div className="pb-6 space-y-4 items-center">
+          <a href={Excel} target='_blank' className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+            <Library />
+            <span>Material complementar</span>
+            <ChevronRight />
+          </a>
           <p>
             Transforme-se em um mestre de planilhas com o Excel. Aprenda a
             organizar, analisar e visualizar dados de forma eficiente,
@@ -125,7 +151,12 @@ function DetalhesWorkshop({ titulo }) {
       );
     case "Blender":
       return (
-        <div>
+        <div className="pb-6 space-y-4 items-center">
+                    <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+            <Library />
+            <span>Material complementar</span>
+            <ChevronRight />
+          </button>
           <p>
             Dê vida à sua imaginação com o Blender, um software de modelagem 3D
             gratuito e poderoso. Aprenda os fundamentos da criação de modelos
@@ -150,6 +181,7 @@ export default function Apresentacao() {
             sala={info.sala}
             dia={info.dia}
             horario={info.horario}
+            material={info.material}
           />
         </div>
       ))}
@@ -158,13 +190,13 @@ export default function Apresentacao() {
 }
 
 const handleClick = () => {
-  toast.success("Disponível na semana do evento", {
+  toast.info("Disponível em breve :)", {
     position: "bottom-center",
     duration: 2000,
   })
 }
 
-function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, detalhes }) {
+function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, material }) {
   const shadowStyle = { boxShadow: "10px 10px 0px rgba(0, 0, 0, 0.40)" };
 
   return (
@@ -227,19 +259,14 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, d
                         <X className="size-5" />
                       </Dialog.Close>
                       <div className="flex flex-col items-center gap-3 lg:px-4 pt-2">
-                        <div className="rounded-lg mt-8 lg:mt-8 justify-center inline-block w-3/4 lg:w-3/5 relative text-white 4 overflow-y-auto max-h-[50vh]">
+                        <div className="rounded-lg mt-8 lg:mt-8 justify-center inline-block w-3/4 lg:w-3/5 relative text-white 4 overflow-y-auto max-h-[50vh] md:max-h-[55vh]">
                           <div className="flex justify-center mb-4">
                             <span className="font-semibold text-lg">
                               {titulo}
                             </span>
                           </div>
-                          <div className="flex flex-col items-center space-y-4">
-                            <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
-                              <Library />
-                              <span>Material complementar</span>
-                              <ChevronRight />
-                            </button>
-                            <DetalhesWorkshop titulo={titulo} />
+                          <div className="flex flex-col">
+                            <DetalhesWorkshop titulo={titulo} material={material}/>
                           </div>
                         </div>
                       </div>
