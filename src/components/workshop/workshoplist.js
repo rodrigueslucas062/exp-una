@@ -71,9 +71,8 @@ function DetalhesWorkshop({ titulo }) {
             <ChevronRight />
           </button>
           <p>
-            HTML é a linguagem de{" "}
-            <span className="text-purple-500 font-bold">
-              marcação utilizada para estruturar o conteúdo na web
+            HTML é a {" "}<span className="text-purple-500 font-bold">
+              linguagem de marcação utilizada para estruturar o conteúdo na web
             </span>{" "}
             . Ele define a
             {" "}<span className="text-purple-500 font-bold">
@@ -84,13 +83,12 @@ function DetalhesWorkshop({ titulo }) {
               HTML usa tags para encapsular diferentes partes do conteúdo
             </span>{" "}
             , permitindo que os navegadores exibam o conteúdo de forma
-            organizada. CSS
-            {" "}<span className="text-purple-500 font-bold">
-              é a linguagem de estilo utilizada para definir a aparência e o
-              layout
+            organizada. Enquanto o {" "}<span className="text-purple-500 font-bold">
+              CSS é a linguagem de estilo utilizada para definir a aparência e o layout
             </span>{" "}
-            das páginas web. Com CSS, você pode controlar aspectos visuais como
-            cores, fontes, espaçamento, alinhamento e disposição dos elementos
+            das páginas web. Com CSS, você pode controlar
+            {" "}<span className="text-purple-500 font-bold">aspectos visuais como
+            cores, fontes, espaçamento, alinhamento e disposição dos elementos</span>{" "}
             na tela. CSS permite a separação entre o conteúdo (HTML) e a
             apresentação visual, facilitando a manutenção e a atualização do
             design de um site.
