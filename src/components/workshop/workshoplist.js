@@ -64,8 +64,8 @@ function DetalhesWorkshop({ titulo }) {
   switch (titulo) {
     case "HTML e CSS":
       return (
-        <div className="pb-6 space-y- items-center4">
-          <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+        <div className="flex flex-col pb-6 space-y-4 items-center">
+          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
@@ -107,8 +107,8 @@ function DetalhesWorkshop({ titulo }) {
       );
     case "Git":
       return (
-        <div className="pb-6 space-y-4 items-center">
-          <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+        <div className="flex flex-col pb-6 space-y-4 items-center">
+          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
@@ -123,7 +123,7 @@ function DetalhesWorkshop({ titulo }) {
     case "SQL":
       return (
         <div className="pb-6 space-y-4 items-center">
-          <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
@@ -136,8 +136,8 @@ function DetalhesWorkshop({ titulo }) {
       );
     case "Excel":
       return (
-        <div className="pb-6 space-y-4 items-center">
-          <a href={Excel} target='_blank' className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+        <div className="flex flex-col pb-6 space-y-4 items-center">
+          <a href={Excel} target='_blank' className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3">
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
@@ -152,7 +152,7 @@ function DetalhesWorkshop({ titulo }) {
     case "Blender":
       return (
         <div className="pb-6 space-y-4 items-center">
-                    <button className="flex w-[95%] justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
