@@ -55,50 +55,58 @@ const lista = [
 ];
 
 function DetalhesWorkshop({ titulo }) {
-  const Html = '/material/Html.pdf'
-  const Git = '/material/Git.pdf'
-  const SQL = '/material/SQL.pdf'
-  const Excel = '/material/Excel.pdf'
-  const Blender = '/material/Blender.pdf'
+  const Html = "/material/Html.pdf";
+  const Git = "/material/Git.pdf";
+  const Sql = "/material/Sql.pdf";
+  const Excel = "/material/Excel.pdf";
+  const Blender = "/material/Blender.pdf";
 
   switch (titulo) {
     case "HTML e CSS":
       return (
         <div className="flex flex-col pb-6 space-y-4 items-center">
-          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+          <button
+            className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+            onClick={handleClick}
+          >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
           </button>
           <p>
-            HTML é a {" "}<span className="text-purple-500 font-bold">
+            HTML é a{" "}
+            <span className="text-purple-500 font-bold">
               linguagem de marcação utilizada para estruturar o conteúdo na web
             </span>{" "}
-            . Ele define a
-            {" "}<span className="text-purple-500 font-bold">
+            . Ele define a{" "}
+            <span className="text-purple-500 font-bold">
               semântica dos elementos
             </span>{" "}
-            que compõem uma página, como parágrafos, cabeçalhos, e muito mais.
-            {" "}<span className="text-purple-500 font-bold">
+            que compõem uma página, como parágrafos, cabeçalhos, e muito mais.{" "}
+            <span className="text-purple-500 font-bold">
               HTML usa tags para encapsular diferentes partes do conteúdo
             </span>{" "}
             , permitindo que os navegadores exibam o conteúdo de forma
-            organizada. Enquanto o {" "}<span className="text-purple-500 font-bold">
-              CSS é a linguagem de estilo utilizada para definir a aparência e o layout
+            organizada. Enquanto o{" "}
+            <span className="text-purple-500 font-bold">
+              CSS é a linguagem de estilo utilizada para definir a aparência e o
+              layout
             </span>{" "}
-            das páginas web. Com CSS, você pode controlar
-            {" "}<span className="text-purple-500 font-bold">aspectos visuais como
-            cores, fontes, espaçamento, alinhamento e disposição dos elementos</span>{" "}
+            das páginas web. Com CSS, você pode controlar{" "}
+            <span className="text-purple-500 font-bold">
+              aspectos visuais como cores, fontes, espaçamento, alinhamento e
+              disposição dos elementos
+            </span>{" "}
             na tela. CSS permite a separação entre o conteúdo (HTML) e a
             apresentação visual, facilitando a manutenção e a atualização do
-            design de um site.
-            {" "}<span className="text-purple-500 font-bold">
+            design de um site.{" "}
+            <span className="text-purple-500 font-bold">
               CSS é aplicado aos elementos HTML através de seletores
             </span>{" "}
-            que podem ser baseados em
-            {" "}<span className="text-purple-500 font-bold">
+            que podem ser baseados em{" "}
+            <span className="text-purple-500 font-bold">
               tags, classes, IDs ou atributos
-            </span>{" "}
+            </span>
             .
           </p>
         </div>
@@ -106,59 +114,124 @@ function DetalhesWorkshop({ titulo }) {
     case "Git":
       return (
         <div className="flex flex-col pb-6 space-y-4 items-center">
-          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+          <button
+            className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+            onClick={handleClick}
+          >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
           </button>
           <p>
-            Torne-se um especialista em Git, a ferramenta essencial para
-            controle de versão de software. Aprenda a trabalhar em equipe com
-            eficiência, rastreando alterações e versionamento do seu código.
+            Git é um{" "}
+            <span className="text-purple-500 font-bold">
+              sistema de controle de versão
+            </span>{" "}
+            criado por Linus Torvalds. O{" "}
+            <span className="text-purple-500 font-bold">
+              Git permite que os desenvolvedores acompanhem as mudanças no
+              código, registrem quem efetuou as alterações e restaurem versões
+              anteriores do código
+            </span>
+            .GitHub é um{" "}
+            <span className="text-purple-500 font-bold">
+              projeto de gestão baseado em nuvem que incorpora os recursos de
+              controle de versão do Git
+            </span>
+            . Isso significa que todos os usuários do GitHub podem acompanhar e
+            gerenciar as mudanças feitas para o código-fonte em tempo real,{" "}
+            <span className="text-purple-500 font-bold">
+              enquanto têm acesso a todos os outros recursos do Git disponíveis
+              no mesmo lugar
+            </span>
+            .
           </p>
         </div>
       );
     case "SQL":
       return (
-        <div className="pb-6 space-y-4 items-center">
-          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+        <div className="flex flex-col pb-6 space-y-4 items-center">
+          <a
+            href={Sql}
+            target="_blank"
+            className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+          >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
-          </button>
+          </a>
           <p>
-            Domine a linguagem SQL para gerenciar e consultar bancos de dados.
-            Aprenda a armazenar, organizar e recuperar informações com maestria.
+            SQL {" "}<span className="text-purple-500 font-bold">(Structured Query Language) é uma linguagem de programação
+            utilizada para gerenciar e manipular bancos de dados relacionais</span>.
+            Com o SQL, os usuários podem executar uma variedade de operações em
+            um banco de dados, incluindo {" "}<span className="text-purple-500 font-bold">inserção, consulta, atualização e
+            exclusão de dados</span>. Além disso, o SQL oferece recursos avançados para
+            definir e modificar a estrutura de um banco de dados, como a {" "}<span className="text-purple-500 font-bold">criação
+            de tabelas, definição de chaves primárias e estrangeiras, e criação
+            de índices para otimizar o desempenho das consultas</span>. Devido à sua
+            ampla adoção e compatibilidade com diferentes sistemas de
+            gerenciamento de banco de dados, o {" "}<span className="text-purple-500 font-bold">SQL é uma habilidade essencial
+            para desenvolvedores, analistas de dados e profissionais de TI</span>{" "} em
+            geral.
           </p>
         </div>
       );
     case "Excel":
       return (
         <div className="flex flex-col pb-6 space-y-4 items-center">
-          <a href={Excel} target='_blank' className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3">
+          <a
+            href={Excel}
+            target="_blank"
+            className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+          >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
           </a>
           <p>
-            Transforme-se em um mestre de planilhas com o Excel. Aprenda a
-            organizar, analisar e visualizar dados de forma eficiente,
-            otimizando seu tempo e trabalho.
+            O Excel é uma ferramenta de
+            {" "}<span className="text-purple-500 font-bold">
+              planilhas eletrônicas
+            </span>{" "}
+            amplamente
+            {" "}<span className="text-purple-500 font-bold">
+              utilizada para organizar dados, realizar cálculos e criar gráficos
+            </span>
+            . Com ele, você pode realizar
+            {" "}<span className="text-purple-500 font-bold">
+              funções matemáticas, criar tabelas dinâmicas, gerar gráficos e até
+              mesmo automatizar tarefas
+            </span>{" "}
+            com macros. Em suma, o Excel é uma ferramenta poderosa para
+            {" "}<span className="text-purple-500 font-bold">
+              análise e manipulação de dados
+            </span>
+            .
           </p>
         </div>
       );
     case "Blender":
       return (
-        <div className="pb-6 space-y-4 items-center">
-          <button className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3" onClick={handleClick} >
+        <div className="flex flex-col pb-6 space-y-4 items-center">
+          <a
+            href={Blender}
+            target="_blank"
+            className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
+          >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
-          </button>
+          </a>
           <p>
-            Dê vida à sua imaginação com o Blender, um software de modelagem 3D
-            gratuito e poderoso. Aprenda os fundamentos da criação de modelos
-            3D, animações e efeitos visuais.
+            Blender é um {" "}<span className="text-purple-500 font-bold">software de código aberto para modelagem, animação,
+            renderização, simulação, composição e edição de vídeo 3D</span>. Ele
+            oferece uma ampla gama de ferramentas para {" "}<span className="text-purple-500 font-bold">criar e manipular objetos
+            em ambientes tridimensionais</span>, permitindo que os usuários desenvolvam
+            desde simples modelos estáticos até animações complexas e efeitos
+            visuais impressionantes. Com sua interface intuitiva e recursos
+            poderosos, o {" "}<span className="text-purple-500 font-bold">Blender é amplamente utilizado por artistas digitais,
+            designers, animadores e profissionais de efeitos visuais em todo o
+            mundo</span>.
           </p>
         </div>
       );
@@ -264,7 +337,10 @@ function ApresentacaoWorkshop({ imagem, titulo, descricao, sala, dia, horario, m
                             </span>
                           </div>
                           <div className="flex flex-col">
-                            <DetalhesWorkshop titulo={titulo} material={material}/>
+                            <DetalhesWorkshop
+                              titulo={titulo}
+                              material={material}
+                            />
                           </div>
                         </div>
                       </div>
