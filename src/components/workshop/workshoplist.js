@@ -189,22 +189,21 @@ function DetalhesWorkshop({ titulo }) {
             <ChevronRight />
           </a>
           <p>
-            O Excel é uma ferramenta de
+            O Excel é um
             {" "}<span className="text-purple-500 font-bold">
-              planilhas eletrônicas
+            software de planilha eletrônica
             </span>{" "}
-            amplamente
+            mais conhecido do mundo, por ser uma ferramenta amplamente utilizado em ambientes profissionais, educacionais e pessoais para uma variedade de tarefas, desde
             {" "}<span className="text-purple-500 font-bold">
-              utilizada para organizar dados, realizar cálculos e criar gráficos
+            contabilidade e gestão de dados até acompanhamento de orçamento e criação de relatórios
             </span>
-            . Com ele, você pode realizar
+            . Além disso, o Excel permite aos usuários
             {" "}<span className="text-purple-500 font-bold">
-              funções matemáticas, criar tabelas dinâmicas, gerar gráficos e até
-              mesmo automatizar tarefas
+            organizar, calcular e analisar dados de forma eficiente
             </span>{" "}
-            com macros. Em suma, o Excel é uma ferramenta poderosa para
+            utilizando recursos poderosos, como
             {" "}<span className="text-purple-500 font-bold">
-              análise e manipulação de dados
+            fórmulas, gráficos e funções, facilitando a manipulação e a visualização de informações numéricas
             </span>
             .
           </p>
