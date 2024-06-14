@@ -43,8 +43,8 @@ const ApresentacoesInfoEngSoft = [
     descricao:
     "O GeekOwl é um site feito para catalogar animes e jogos existentes, reunindo informações sobre eles como duração, gênero, staff (diretor, dubladores, etc), prêmios e outras coisas. Ele também serve como uma lista que o usuário pode escolher e selecionar animes/jogos que ele já assistiu e salvar para assim ter um histórico de tudo que já viu e jogou, além de poder escolher seus favoritos, dar notas e conversar com outras pessoas sobre.",
     integrantes: [
-      "Junio Alves batista dias,",
-      "Ariadne kelly braz damasceno,",
+      "Junio Alves Batista Dias,",
+      "Ariadne Kelly Braz Damasceno,",
       "Leandro Gusmão Mayrink,",
       "Gustavo Neves Braun",
     ],
@@ -63,7 +63,7 @@ const ApresentacoesInfoAnaliseBig = [
     integrantes: [
       "Eduardo Gomes,",
       "Fábio Nacif,",
-      "gabriel Hirle,",
+      "Gabriel Hirle,",
       "Michel Prata,",
       "Paulo Junior,",
     ],
@@ -130,7 +130,7 @@ const ApresentacoesInfoCompGrafica = [
       integrantes: [
         "Eduardo Gomes,",
         "Fábio Nacif,",
-        "gabriel Hirle,",
+        "Gabriel Hirle,",
         "Michel Prata,",
         "Paulo Junior,",
       ],
