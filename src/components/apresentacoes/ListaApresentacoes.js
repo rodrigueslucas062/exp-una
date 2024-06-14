@@ -52,21 +52,6 @@ const ApresentacoesInfoEngSoft = [
     dia: "Sexta-feira, 21/06",
     sala: '901',
   },
-  {
-    titulo: "Geek Owl",
-    unidadeCurricular: "Eng. Software",
-    descricao:
-    "O GeekOwl é um site feito para catalogar animes e jogos existentes, reunindo informações sobre eles como duração, gênero, staff (diretor, dubladores, etc), prêmios e outras coisas. Ele também serve como uma lista que o usuário pode escolher e selecionar animes/jogos que ele já assistiu e salvar para assim ter um histórico de tudo que já viu e jogou, além de poder escolher seus favoritos, dar notas e conversar com outras pessoas sobre.",
-    integrantes: [
-      "Junio Alves batista dias,",
-      "Ariadne kelly braz damasceno,",
-      "Leandro Gusmão Mayrink,",
-      "Gustavo Neves Braun",
-    ],
-    hora: "08:50 às 09:50",
-    dia: "Sexta-feira, 21/06",
-    sala: '901',
-  },
 ];
 
 const ApresentacoesInfoAnaliseBig = [
