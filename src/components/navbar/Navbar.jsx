@@ -17,6 +17,7 @@ const sectionNames = {
     Governanca: "Gov. e Serviços de Ti",
     workshops: "Workshops",
     palestra: "Palestras",
+    programacao: "Programação completa",
 };
 
 export default function Navbar() {

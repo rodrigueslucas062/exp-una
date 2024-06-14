@@ -19,6 +19,11 @@ const Links = [
     titulo: "Palestras",
     icone: "Palestras",
   },
+  // {
+  //   link: "/programacao",
+  //   titulo: "Programação Completa",
+  //   icone: "Palestras",
+  // },
 ];
 
 const Paginas = ({ link, titulo, icone }) => {
