@@ -1,4 +1,4 @@
-import ProgramacaoCompleta from "@/components/programacao/Programaca.Completa";
+import ProgramacaoCompleta from "@/components/programacao/ProgramacaoCompleta";
 
 export default function Programacao() {
   return <ProgramacaoCompleta />;
