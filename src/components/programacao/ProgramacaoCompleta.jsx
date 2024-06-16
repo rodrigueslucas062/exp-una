@@ -5,7 +5,7 @@ import Logo from '../../../public/images/Logo.jpeg';
 
 const apresentacoesEngSoft = [
   {
-    unidadeCurricular: "Eng. Software",
+    evento: "Eng. Software",
     hora: "08:50 às 09:50",
     sala: '901',
     dia: "Sexta-feira, 21/06",
@@ -14,7 +14,7 @@ const apresentacoesEngSoft = [
 
 const apresentacoesAnaliseBig = [
   {
-    unidadeCurricular: "Analise de Dados e Big Data",
+    evento: "Analise de Dados e Big Data",
     hora: "08:50 às 09:50",
     sala: '201',
     dia: "Terça-feira, 18/06",
@@ -23,7 +23,7 @@ const apresentacoesAnaliseBig = [
 
 const apresentacoesCompGrafica = [
   {
-    unidadeCurricular: "Computação Gráfica e Realidade Virtual",
+    evento: "Computação Gráfica e Realidade Virtual",
     hora: "08:50 às 09:50",
     sala: '1105',
     dia: "Quinta-feira, 20/06",
@@ -32,7 +32,7 @@ const apresentacoesCompGrafica = [
 
 const apresentacoesGovTi = [
   {
-    unidadeCurricular: "Governança e Serviços de TI",
+    evento: "Governança e Serviços de TI",
     hora: "10:30 às 11:30",
     sala: '1106',
     dia: "Quinta-feira, 20/06",
@@ -42,36 +42,43 @@ const apresentacoesGovTi = [
 const lista = [
   {
     titulo: "HTML e CSS",
-    unidadeCurricular: "HTML e CSS",
+    evento: "HTML e CSS",
     hora: "08:50 às 09:50",
     sala: "1105",
     dia: "Segunda-feira, 17/06",
   },
   {
     titulo: "Git",
-    unidadeCurricular: "Git",
+    evento: "Git",
     hora: "10:30 às 11:30",
     sala: "1106",
     dia: "Segunda-feira, 17/06",
   },
   {
     titulo: "SQL",
-    unidadeCurricular: "SQL",
+    evento: "SQL",
     hora: "10:30 às 11:30",
     sala: "1105",
     dia: "Terça-feira, 18/06",
   },
   {
     titulo: "Excel",
-    unidadeCurricular: "Excel",
+    evento: "Excel",
     hora: "10:30 às 11:30",
     sala: "1105",
     dia: "Sexta-feira, 21/06",
   },
   {
     titulo: "Blender",
-    unidadeCurricular: "Blender",
+    evento: "Blender",
     hora: "10:30 às 11:30",
+    sala: "206",
+    dia: "Quarta-feira, 19/06",
+  },
+  {
+    titulo: "Palestra",
+    evento: "Palestra Direito digital",
+    hora: "08:50 às 10h",
     sala: "206",
     dia: "Quarta-feira, 19/06",
   },
@@ -83,7 +90,7 @@ const ApresentacoesInfo = [
   ...apresentacoesCompGrafica,
   ...apresentacoesGovTi,
   ...lista.map(item => ({
-    unidadeCurricular: item.unidadeCurricular,
+    evento: item.evento,
     hora: item.hora,
     sala: item.sala,
     dia: item.dia,
@@ -133,12 +140,12 @@ export default function ProgramacaoCompleta() {
         {diasDaSemana.map(dia => {
           const apresentacoesDoDia = ApresentacoesInfo.filter(apresentacao => apresentacao.dia === dia);
           return (
-            <div key={dia} className="mb-6">
+            <div key={dia} className="p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md">
               <h3 className="text-2xl font-bold mb-4">{dia}</h3>
               {apresentacoesDoDia.length > 0 ? (
                 apresentacoesDoDia.map((apresentacao, index) => (
-                  <div key={index} className="mb-4 p-4 bg-zinc-800 rounded-lg">
-                    <p className="text-lg"><strong>Unidade Curricular:</strong> {apresentacao.unidadeCurricular}</p>
+                  <div key={index} className="mb-4 p-4 bg-purple-500/20 rounded-lg">
+                    <p className="text-lg"><strong>Evento:</strong> {apresentacao.evento}</p>
                     <p><strong>Hora:</strong> {apresentacao.hora}</p>
                     <p><strong>Sala:</strong> {apresentacao.sala}</p>
                   </div>
