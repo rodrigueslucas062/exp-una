@@ -1,9 +1,11 @@
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Book } from "lucide-react";
 import Link from "next/link";
 import Logo from '../../../public/images/Logo.jpeg'
 import Image from "next/image";
 import { useInViewHook } from "@/utils/hooks/use-in-view.hook";
 import { ListaInstrutores } from "./instrutores";
+import { ListaDev } from "./desenvolvimento";
+import { Aquisicoes } from "./aquisicoes";
 
 export default function ColaboradoresProj() {
     const { ref, inView } = useInViewHook(0.5);
@@ -39,12 +41,51 @@ export default function ColaboradoresProj() {
             </div>
 
             <div className="w-full md:w-1/2 md:ml-[50%] py-6 px-6 lg:px-16 text-white space-y-4 overflow-y-auto">
+                <section className="lg:px-16 text-white space-y-4">
+                    <h1 ref={ref} className={`mb-5 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Sobre o site</h1>
+                    <span>Este site e organização da ExpoUna das turmas de TI do turno da manhã é nossa apresentação no evento. Consistia em organizar e gerenciar o desenvolvimento das exposições das outras turmas.</span>
+                </section>
+                <section id="projeto" className="lg:px-16 text-white space-y-4">
+                    <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Gerente de Projetos</h1>
+                    <article ref={ref} className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
+                        <div className="flex justify-between items-center mb-5 text-gray-500">
+                            <span className="gap-2 text-xs font-medium inline-flex items-center px-2 py-1 rounded bg-purple-500/20 text-white">
+                                <Book size={14} />
+                                Gerente de Projetos
+                            </span>
+                        </div>
+                        <p className="mb-5 font-light text-gray-400">Responsável por gerir todas as equipes e organizar a execução do projeto</p>
+                        <div className="flex justify-between items-center">
+                            <div className="flex flex-col space-y-4">
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="font-medium text-white">Participantes:</span>
+                                    <span className="text-gray-400">
+                                        Ana Thereza
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section id="devs" className="lg:px-16 text-white space-y-4">
+                    <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Desenvolvedores</h1>
+                    <ListaDev />
+                </section>
+                <section id="aquisicoes" className="lg:px-16 text-white space-y-4">
+                    <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Sympla e certificados</h1>
+                    <Aquisicoes />
+                </section>
                 <section id="instrutores" className="lg:px-16 text-white space-y-4">
                     <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Instrutores</h1>
                     <ListaInstrutores />
                 </section>
-
+                {/* <section id="agradecimentos" className="lg:px-16 text-white space-y-4">
+                <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Agradecimentos</h1>
+                    <div className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
+                        <span>Gostariamos de agradecer </span>
+                    </div>
+                </section> */}
             </div>
-        </section>
+        </section >
     )
 }
