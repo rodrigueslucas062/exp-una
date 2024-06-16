@@ -65,14 +65,15 @@ function DetalhesWorkshop({ titulo }) {
     case "HTML e CSS":
       return (
         <div className="flex flex-col pb-6 space-y-4 items-center">
-          <button
+          <a
+            href={Html}
+            target="_blank"
             className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
-            onClick={handleClick}
           >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
-          </button>
+          </a>
           <p>
             HTML é a{" "}
             <span className="text-purple-500 font-bold">
@@ -114,14 +115,15 @@ function DetalhesWorkshop({ titulo }) {
     case "Git":
       return (
         <div className="flex flex-col pb-6 space-y-4 items-center">
-          <button
+          <a
+            href={Git}
+            target="_blank"
             className="flex justify-between px-3 rounded-md ring-1 ring-gray-300 py-2 lg:py-3"
-            onClick={handleClick}
           >
             <Library />
             <span>Material complementar</span>
             <ChevronRight />
-          </button>
+          </a>
           <p>
             Git é um{" "}
             <span className="text-purple-500 font-bold">
