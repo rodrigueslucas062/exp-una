@@ -79,12 +79,6 @@ export default function ColaboradoresProj() {
                     <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Instrutores</h1>
                     <ListaInstrutores />
                 </section>
-                {/* <section id="agradecimentos" className="lg:px-16 text-white space-y-4">
-                <h1 ref={ref} className={`mb-10 md:mt-16 text-3xl font-semibold ${inView && "animate-fade-right"}`}>Agradecimentos</h1>
-                    <div className={`p-6 backdrop-blur-sm bg-zinc-100/[0.03] rounded-lg ring-1 ring-gray-700 shadow-md ${inView && "animate-fade-up"}`}>
-                        <span>Gostariamos de agradecer </span>
-                    </div>
-                </section> */}
             </div>
         </section >
     )
