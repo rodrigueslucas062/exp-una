@@ -57,7 +57,7 @@ const lista = [
 function DetalhesWorkshop({ titulo }) {
   const Html = "/material/Html.pdf";
   const Git = "/material/Git.pdf";
-  const Sql = "/material/Sql.pdf";
+  const Sql = "/material/SQL.pdf";
   const Excel = "/material/Excel.pdf";
   const Blender = "/material/Blender.pdf";
 
