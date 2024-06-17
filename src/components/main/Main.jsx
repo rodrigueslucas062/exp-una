@@ -26,6 +26,7 @@ export function Main() {
           <ProgCompleta />
         </div>
         <span className="text-sm font-semibold mb-4 text-gray-300">Participe para ganhar <span className="text-purple-500 font-bold">10h de extensão :)</span></span>
+        <span className="text-sm font-semibold mb-4 text-gray-300">Certificados disponíveis após a <span className="text-purple-500 font-bold">conclusão do evento</span></span>
       </div>
     </motion.section>
   );
