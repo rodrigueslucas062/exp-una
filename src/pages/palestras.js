@@ -83,7 +83,7 @@ export default function Palestras() {
             </p>
             <p className="text-lg">
               Local:{" "}
-              <span className="font-semibold text-purple-400">Sala 503</span>
+              <span className="font-semibold text-purple-400">Sala 502</span>
             </p>
           </div>
           <div className="flex items-center gap-2 my-4">
